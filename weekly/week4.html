@@ -207,7 +207,7 @@
             
          <p>Once a client successfully connects, the game window launches. I added core rendering components including a camera, shader, scene, cube mesh, and directional lighting. I added a floor, and players are spawned at predefined locations using cubes as temporary character placeholders. All player state is maintained on the server.</p>
             
-         <p>On the client side, I implemented keyboard input handling. Clients now support both WASD and arrow keys, with smooth, continuous input using polling instead of key callbacks–allowing for multiple keys to be held simultaneously. The client sends input actions to the server, which listens asynchronously. The server processes incoming message then broadcasts updated player states to all clients on a separate tick thread (every 30ms), and each client receives and applies the update.</p>
+         <p>On the client side, I implemented keyboard input handling. Clients now support both WASD and arrow keys, with smooth, continuous input using polling instead of key callbacks–allowing for multiple keys to be held simultaneously. The client sends input actions to the server, which listens asynchronously. The server processes incoming messages then broadcasts updated player states to all clients on a separate tick thread (every 30ms), and each client receives and applies the update.</p>
             
          <p>Players can now:</p>
             <ul>
@@ -219,7 +219,7 @@
             
          <p>I also added support for client disconnection: when a player disconnects, their character disappears from all other clients' views, and their ID and state are cleared on the server for reuse.</p>
             
-         <p>The server uses two threads: the main thread (for accepting connections) and a separate thread for processing client messages and broadcasting state. To ensure thread safety, I added a mutex to protect shared data like player states and message queues.</p>
+         <p>The server uses two threads: the main thread handles accepting new connections and listening for incoming messages from clients, while a separate tick thread processes those messages and broadcasts updated player states. To ensure thread safety, I added a mutex to protect shared data like player states and message queues.</p>
 
          <img src="../assets/w4i5.png" alt="Screenshot of the game" style="width: 50%; max-width: 600px; margin-right: 20px;">
          <img src="../assets/w4i6.png" alt="Screenshot of the game" style="width: 50%; max-width: 600px;">
