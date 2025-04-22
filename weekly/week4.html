@@ -223,19 +223,27 @@
          <img src="../assets/w4i5.png" alt="Screenshot of the game" style="width: 50%; max-width: 600px; margin-right: 20px;">
          <img src="../assets/w4i6.png" alt="Screenshot of the game" style="width: 50%; max-width: 600px;">
          <h4> If the week went differently than you had planned, what were the reasons? note that this happens regularly…I would prefer you to be aggressive in what you want to try accomplish rather than limit yourself to goals you know you’ll easily achieve. so answering this question is more of a reflection on the development process and the surprises you encounter, it’s not at all an evaluation.</h4>
-         <p> </p>
+         <p> I think the week went pretty much as planned.</p>
 
          <h4> What are your specific goals for the next week?</h4>
-         <p> </p>
+         <p> My main goals for this week are to import Jasmine’s models, add support for mouse movement, and improve the overall code structure by finalizing key design decisions–such as how many messages the server should process per client per tick. I also plan to make clients read server messages asynchronously, so the game loop remains responsive and can support things like background music, smooth rendering, and real-time UI updates.
+         </p>
 
          <h4> What did you learn this week, if anything (and did you expect to learn it)?</h4>
          <p>This week, I learned more about boost::asio::streambuf. I realized that even when it's set to read until a newline ('\n'), it often reads more data than expected for efficiency. Because of this behavior, I couldn't define the buffer inside a local function–every time the function ran, it would create a new buffer and lose the previously read data. To fix this, I made streambuf a class member variable.
 
             Now, the client has one persistent buffer, and the server maintains one buffer per client, stored in an unordered_map that maps client IDs to their buffers. I found boost::asio::streambuf really useful because it handles leftover data gracefully–it keeps the extra bytes and continues reading from where it left off on the next read.
-             </p>
+            </p>
 
          <h4> What is your individual morale (which might be different from the overall group morale)?</h4>
-         <p> </p>
+         <p> I'm really grateful for all the learning opportunities. I'm excited to be learning so much—not just on the technical side, but also about how to work better with others. I read Gabriel's report for this week and was a bit surprised, because I felt like we communicated a lot.
+
+            I understand why he might feel that way, but I thought I had explained clearly that I needed to write my own shader code so I could quickly get a working version for testing and implementing the networking side. I told him that we'd lean into his graphics work as the project progresses, and that we'll go with whatever code works best for the game. I never said we'd discard his code. I also mentioned that our goal this quarter is to experiment, learn together, and communicate a lot.
+            
+            When I tried running his code, I first ran into a segmentation fault. After fixing that, the triangle still didn't appear on my screen. I also checked in with him a few times and asked if he had any concerns, but he didn't share anything.
+            
+            That said, I'm taking this as a learning experience too–and I'll try to be even more communicative moving forward.
+            </p>
 
    </main>
 </body>
