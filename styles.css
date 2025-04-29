@@ -7,3 +7,7 @@ nav li {
   display: inline;
   margin-right: 10px;
 }
+
+video {
+  width: 80vw;
+}
