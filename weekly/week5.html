@@ -10,7 +10,7 @@
 <body>
    <!-- Create a nav bar with the OUt of Tune as one element directing over yere -->
 
-   <nav>
+    <nav>
         <ul>
             <li><a href="../index.html">Out of Tune</a></li>
             <li><a href="../specs.html">Project Specs</a></li>
@@ -217,7 +217,7 @@
         <p>After that, I implemented mouse input handling so players can freely look around and change their facing direction. I set a cursor position callback that updates the player's yaw and pitch values whenever mouse movement is detected. During each frame of the main game loop, the client sends its yaw information to the server. The server then updates and broadcasts the players' new facing directions to all connected clients, and the clients update their rendering accordingly.</p>
         <p>I also implemented Esc key functionality. At the start of the game, the mouse is locked and the cursor is hidden to allow players to control their view and facing direction. Pressing Esc toggles mouse lock/unlock: when unlocked, the cursor becomes visible and free to move, but players can no longer change their view direction.</p>
         <p>During the last meeting, I learned that the server should process all messages received from clients, not just one message per client per tick. I updated the server logic to process all pending messages per client each tick.</p>
-        <p>After talking with the professor, I realized I didn't need two threads on the server. Originally, I had used two threads–one running ioContext.run() to handle all asynchronous networking events, and another running a manual while loop to process and broadcast player updates at a fixed tick rate. Since both ioContext.run() and the while loop were blocking operations, I needed a second thread and a mutex to coordinate between them. To simplify the design, I decided to refactor the server: I replaced the manual while loop with an asynchronous ticking system using a boost::asio::steady_timer. Now, ticking is triggered asynchronously at a fixed interval, processing all gathered messages and broadcasting player updates. Both networking and ticking are now handled within a single thread by ioContext.run().</p>
+        <p>After talking with the professor, I realized I didn't need two threads on the server. Originally, I had used two threads–one running ioContext.run() to handle all asynchronous networking events, and another running a manual while loop to process and broadcast player updates at a fixed tick rate. Since ioContext.run() is a blocking call, and the while loop runs indefinitely, I needed a second thread and a mutex to coordinate between them. To simplify the design, I decided to refactor the server: I replaced the manual while loop with an asynchronous ticking system using a boost::asio::steady_timer. Now, ticking is triggered asynchronously at a fixed interval, processing all gathered messages and broadcasting player updates. Both networking and ticking are now handled within a single thread by ioContext.run().</p>
         <p>Lastly, I created a README file for setup instructions and game controls, and added documentation comments for all the code I wrote in the header files.</p>
         <img src="../assets/w5i1.png" alt="Screenshot of the game">
 
