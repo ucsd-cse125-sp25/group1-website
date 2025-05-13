@@ -186,22 +186,25 @@
         <!-- Helen Lin -->
         <h3> General Game Implementation and Mini Games (Helen Lin): </h3>
         <h4>What were your contrete goals for the week?</h4>
-        <p></p>
+        <p>The goal was to incorporate our new object classes into the swamp and get more of the swamp class finished up</p>
 
         <h4>What goals were you able to accomplish?</h4>
-        <p></p>
+        <p>Things didn’t go quite as planned this week as I had a midterm to study for as well as encountering some bugs and problems with the game. I was able to incorporate the object class in the the server side of swamp however after Tuesday’s Meeting and discussion we realized we need to add interfaces to the objects to connect the Rigid bodies to the objects, and also determined a separate lilpad class since they need their own special collision handler which after communication Brandon took over, which I delayed swamp incorporation evern more. But I was able to get an initial swamp setup PR with the initial client server communication merged in. 
+        </p>
 
         <h4>If the week went differently than you had planned, what were the reasons? note that this happens regularly…I would prefer you to be aggressive in what you want to try accomplish rather than limit yourself to goals you know you'll easily achieve. so answering this question is more of a reflection on the development process and the surprises you encounter, it's not at all an evaluation.</h4>
-        <p></p>
+        <p>This week’s work definitely went differently than planned. I had less time to spend on CSE 125 because of midterms but also cause Thursday we encountered a minor bug in the code where in the first approximately 10 seconds of the game start up the player’s movement input and the actual response is delayed in that when you move the player it takes about 1 second to actually render the movement on the client side. Thus also only occurred on the lab computers. I spend most of the time going to the git history and determining where the problem occurred and was able to pin point it to the swamp game state function I added namely the boost line to send the information over. If that line is commented out then we wouldn’t have as sever of the problem. There is still an input delay even before but it was like for 2 to 3 seconds not 10. We decided to pivot the game state update for the swamp to only send messages on when to drop the lily pad. This it self is also an optimization, which I didn’t take this approach before hand because of the complexity of collision response which we have figured out now. I also spend most of my time Thursday helping Annie out with setting up her FMOD, figuring out how to get it to compile. We did get it to a state where it compiled but it broke the client side code. We ended up reaching out to Julie since it was CMAKE stuff which she had much more experience and she was able to get it working. 
+        </p>
 
         <h4>What are your specific goals for the next week?</h4>
-        <p></p>
+        <p>Now that I’m done with midterms and the new Object and Ridigbody interface for custom collision response are in, I plan on catching up with what I missed out this week on the swamp progress. The goal is to change up the game state update for the swamp, check that the input delay but isn’t there any more, create lily pad class, set up an initial class creation on the client side that doesn’t include the rendering since Julie said she’ll take over the rendering/Graphics portion of the swamp</p>
 
         <h4>What did you learn this week, if anything (and did you expect to learn it)?</h4>
-        <p></p>
+        <p>Didn’t expect to work with and learn a bit about cmake while helping Annie out with trying to get FMOD to compile. Another thing I learned this week was more git controls which I wasn’t expecting. Checking out specific commits digging through the history and figuring out where the problem came from. 
+        </p>
 
         <h4>What is your individual morale (which might be different from the overall group morale)?</h4>
-        <p></p>
+        <p>Not quite happy about my progress but I feel better conceptually wise on what’s to come since a lot of the confusing about the code and the structure from previous weeks are more or less cleared up. Now I feel like I just need the time to sit town and churn out the code.</p>
 
         <!-- Julie -->
         <h3>Graphics & Network (Julie):</h3>
