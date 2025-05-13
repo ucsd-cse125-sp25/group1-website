@@ -85,22 +85,39 @@
         <!-- Graphics -->
         <h3>Graphics (Gabriel):</h3>
         <h4>What were your contrete goals for the week?</h4>
-        <p></p>
+        <p>My concrete goals were:</p>
+        <ol>
+            <li>Finish implementing the timer display</li>
+            <li>Refactor the UIElement class into an AnimatedUIElement and a StaticUIElement for elements that won’t be updated (texts, fixed images, etc.)</li>
+            <li>Figure out a way to let transparent elements “stack” without erasing each other</li>
+            <li>Create a canvas object that manages the positions, visibility and drawing order of all UI elements on screen</li>
+            <li>Create a compass that points towards the world Z axis</li>
+        </ol>
 
         <h4>What goals were you able to accomplish?</h4>
-        <p></p>
+        <p>
+            Almost all of them have been accomplished as of writing this. I finished the timer display and refactoring the UIElement into 2 distinct classes ended up being unnecessary. 
+            Additionally I learned that disabling writing to the depth buffer (glDepthMask(GL_FALSE)) fixes the transparent “overwriting” issue. I still don’t fully understand why that’s the case, but from what I’m getting, depth masks (when used improperly) can assign the depth of a transparent pixel to be a front-most pixel and, thus, “cover” pixels that are placed behind it. Disabling depth masks lets me place front-ground objects by drawing them later, and the pixels aren’t “overwritten”. 
+            I also managed to create a canvas object, which lets me quickly adjust the positions of all elements on screen without having to change each file one-by-one. I still want to change the canvas object so that it’s more flexible and usable on different screens aside from the main game (main menu, game over screen, waiting for players, etc).  
+            The compass is almost done. Fixing the transparency issue let me stack a compass “hand” texture on top of the compass “frame” and rotate it independently. As of now, the hands are able to rotate, but they don’t point to a fixed axis yet.
+        </p>
 
         <h4>If the week went differently than you had planned, what were the reasons? note that this happens regularly…I would prefer you to be aggressive in what you want to try accomplish rather than limit yourself to goals you know you'll easily achieve. so answering this question is more of a reflection on the development process and the surprises you encounter, it's not at all an evaluation.</h4>
-        <p></p>
+        <p>This week went pretty well. I don’t recall any major problems, although I think I should have designed the canvas object to be a more dynamic object that can be added to instead of a fixed set of elements.</p>
 
         <h4>What are your specific goals for the next week?</h4>
-        <p></p>
+        <ol>
+            <li>Finish the compass</li>
+            <li>Create a crosshair that only shows up when player looks at interactable object</li>
+            <li>Refactor Canvas so that it may be reused for different screens aside from the game world</li>
+        </ol>
+
 
         <h4>What did you learn this week, if anything (and did you expect to learn it)?</h4>
-        <p></p>
+        <p>I reinforced my understanding of type casting, interfaces and inheritance in C++. Some of these concepts were already familiar to me in other languages, so it was good to brush them off in C++. Planning what should be an interface, a class and a subclass was a very educational exercise in object oriented programming and creating maintainable code. I also learned how to use shaders to manipulate the rotation of an object.</p>
 
         <h4>What is your individual morale (which might be different from the overall group morale)?</h4>
-        <p></p>
+        <p>Overall I feel like UI is still in a good spot. I’ll need to talk to the overall programming people to figure out a couple of details for the next steps (namely how interactable items are being implemented and what screen are we planning to have in the game).</p>
 
         <!-- William -->
         <h3>General Game Implementation and Mini Games (William):</h3>
