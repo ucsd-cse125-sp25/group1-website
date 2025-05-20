@@ -207,24 +207,29 @@
       <!-- Julie -->
       <h3>Graphics & Network (Julie):</h3>
       <h4>What were your contrete goals for the week?</h4>
-      <p></p>
+      <p>My main goals for the week were to extend bounding box mode to render player bounding boxes, work on the swamp room, implement a bloom effect, and finalize the shadows and lighting setups for both the swamp room and the hotel room.</p>
 
       <h4>What goals were you able to accomplish?</h4>
-      <p></p>
+      <p>I extended bounding box mode so that it now renders player bounding boxes.</p>
+      <p>I also organized child instances within a room by type and ID, which allows us to delete a specific child dynamically–for example, a lily pad can be removed from the scene if a player steps on the wrong one.</p>
+      <p>I added lily pads to the swamp room, added lighting and shadows, and adjusted the shadows to appear lighter. I also made the water in the swamp room transparent.</p>
+      <p>I'm still experimenting with the overall lighting and shadow setup and have more work to do.</p>
       <img src="../assets/w8i1.png" alt="Screenshot of the game">
       <img src="../assets/w8i2.png" alt="Screenshot of the game">
 
       <h4>If the week went differently than you had planned, what were the reasons? note that this happens regularly…I would prefer you to be aggressive in what you want to try accomplish rather than limit yourself to goals you know you’ll easily achieve. so answering this question is more of a reflection on the development process and the surprises you encounter, it’s not at all an evaluation.</h4>
-      <p></p>
+      <p>The week went a bit differently than I hoped because my health got worse. I couldn't stop coughing, my throat was really hurting, and I ended up getting a high fever. I went to the hospital, but it didn't help. I've been sick for a while now, and I was feeling a bit sad because I don't feel like I'm getting any better. I spent a lot of time sleeping because of the medication.</p>
 
       <h4>What are your specific goals for the next week?</h4>
-      <p></p>
+      <p>I extended the bounding box mode so it now draws player bounding boxes. Currently, it's handled on the client side and based on the player's rotation, so it basically shows the ground truth bounding box. But I'm planning to change it so it uses the actual minCorner and maxCorner values that are calculated on the server side.</p>
+      <p>At first, I was rendering the shadow maps every frame, but that was obviously too slow, especially with multiple players. So I changed it to render each shadow map once per light, including just the static geometry for the rooms that the light affects. From there, I plan to update shadows dynamically only when needed–for example, if a player moves around the scene or a door opens.</p>
+      <p>Currently, only point lights are used for shadows, but in the swamp room, they create a circular lighting effect on the walls. I'm trying to improve how that looks and plan to try using a directional light shadows there to see if it looks better. I'm still experimenting and trying to find the best balance between good visuals and performance.</p>
 
       <h4>What did you learn this week, if anything (and did you expect to learn it)?</h4>
-      <p></p>
+      <p>I learned that implementing shadows across different rooms involves a lot of tradeoffs between performance and visual quality. </p>
 
       <h4>What is your individual morale (which might be different from the overall group morale)?</h4>
-      <p></p>
+      <p>I'm feeling a bit down, mostly because of my health, but I'll be okay soon!</p>
    </main>
 </body>
 </html>
