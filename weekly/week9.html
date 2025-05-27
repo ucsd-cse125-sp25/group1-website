@@ -36,82 +36,93 @@
       <!-- Jasmine -->
       <h3>Art (Jasmine):</h3>
       <h4>What were your contrete goals for the week?</h4>
-      <p></p>
+      <p>Finish player character
+</p>
 
       <h4>What goals were you able to accomplish?</h4>
-      <p></p>
+      <p>I made an idle animation, and modeled 2 characters. I haven’t textured them yet and I have two more characters to finish but they use the same base model so it should be tooooo difficult. I also still need to finish the running animation. </p>
 
       <h4>If the week went differently than you had planned, what were the reasons? note that this happens regularly…I would prefer you to be aggressive in what you want to try accomplish rather than limit yourself to goals you know you’ll easily achieve. so answering this question is more of a reflection on the development process and the surprises you encounter, it’s not at all an evaluation.</h4>
-      <p></p>
+      <p>I think I made a lot of good progress but as always I could’ve dedicated more time. I am always busier than I expect so I thought I would have more time to complete all the characters. I think I’m also still acting a little like a perfectionist which I think I have to work on in order to finish everything on time.</p>
 
       <h4>What are your specific goals for the next week?</h4>
-      <p></p>
+      <p>Finish the character models for sure. From there just work on room models. Get some version of each rook done even if it isn’t perfect.</p>
 
       <h4>What did you learn this week, if anything (and did you expect to learn it)?</h4>
-      <p></p>
+      <p>I learned about rigging!! That was definitely interesting and took a decent chunk of the time but it was so satisfying when it worked. I also learned how to make and export animations. </p>
 
       <h4>What is your individual morale (which might be different from the overall group morale)?</h4>
-      <p></p>
+      <p>I’m very satisfied with how the character models have started turning out they’re so cute. Excited to finish them and see them in game.</p>
 
       <!-- Annie -->
       <h3>Music (Annie):</h3>
       <h4>What were your contrete goals for the week?</h4>
-      <p></p>
+      <p>Drafting the carnival track and revising the swamp ambience track
+</p>
 
       <h4>What goals were you able to accomplish?</h4>
-      <p></p>
+      <p>I’m able to revise the note sequence through communicating with my teammates of what kind of sequence they want. 
+</p>
 
       <h4>If the week went differently than you had planned, what were the reasons? note that this happens regularly…I would prefer you to be aggressive in what you want to try accomplish rather than limit yourself to goals you know you’ll easily achieve. so answering this question is more of a reflection on the development process and the surprises you encounter, it’s not at all an evaluation.</h4>
-      <p></p>
+      <p>I thought I would have more time to work on the tracks specifically but I found myself busy with other classes. </p>
 
       <h4>What are your specific goals for the next week?</h4>
-      <p></p>
+      <p>Revising the ambience track so that it won’t clash with the note sequence I made. 
+</p>
 
       <h4>What did you learn this week, if anything (and did you expect to learn it)?</h4>
-      <p></p>
+      <p>I learned how to adjust the config.h to turn my audio event name into a constant string so it allows other programmers to reference the audio file. </p>
 
       <h4>What is your individual morale (which might be different from the overall group morale)?</h4>
-      <p></p>
+      <p>I'm a little excited for the player animation to get implemented into the game because I can finally fix the problem I have with the footstep being triggered constantly by only calling it at a specific key frame of the animation. I’m also excited for the cannon to be implemented so I can use a funny cannonball sfx. </p>
 
       <!-- Graphics -->
       <h3>Graphics (Gabriel):</h3>
       <h4>What were your contrete goals for the week?</h4>
-      <p></p>
+      <p>My concrete goals were:
+Add the keys display (will dynamically add keys as players collect them)
+Adjust the HUD layout
+Refactor Canvas so that it may be reused for different screens aside from the game world
+</p>
 
       <h4>What goals were you able to accomplish?</h4>
-      <p></p>
+      <p>I wasn’t able to accomplish much of my set goals because I ended up shifting my focus to something else. I’m trying to make it so that textures aren’t “squished” or “stretched” whenever the window dimensions change. </p>
 
       <h4>If the week went differently than you had planned, what were the reasons? note that this happens regularly…I would prefer you to be aggressive in what you want to try accomplish rather than limit yourself to goals you know you’ll easily achieve. so answering this question is more of a reflection on the development process and the surprises you encounter, it’s not at all an evaluation.</h4>
-      <p></p>
+      <p>	As mentioned, I ended up changing my week goals to make it so that UI texture scales are constant regardless of window size. Making that adjustment wasn’t all that difficult, but what I’m really struggling with right now is making so that texture positions are also constant. The way I’m determining the positions of textures right now is using the window corners as a quad and applying a texture to it. The problem with this is that I don’t have a consistent “pixel” positioning that’s not tied to the screen. Pinning the clock digits down has proven exceptionally tricky, and at this point I’m resorting to hard coding in order to make that adjustment. I’ve been told that this feature is mainly for debugging, so I don’t think it should be that big of a deal if this ends up looking janky in smaller window sizes?</p>
 
       <h4>What are your specific goals for the next week?</h4>
-      <p></p>
+      <p>Figure out a way to use a more consistent position measurement for UI elements OR hard code different layouts
+Add the keys display (will dynamically add keys as players collect them)
+Refactor Canvas so that it may be reused for different screens aside from the game world
+</p>
 
       <h4>What did you learn this week, if anything (and did you expect to learn it)?</h4>
-      <p></p>
+      <p>	I learned that positioning can be deceptively difficult to implement when you take into account different window sizes and displays. It reminds me a lot of webdev in a way, especially how I was designing the UI to work on fullscreen and didn’t account for “in-betweens”.</p>
 
       <h4>What is your individual morale (which might be different from the overall group morale)?</h4>
-      <p></p>
+      <p>	I feel determined. There are a few things that need sorting right now (mainly figuring out UI for different window sizes, pushing what I have to main and resolving inevitable merge conflicts). Still, I do think this can all be done this week, and I should be able to start the UI for other screens.</p>
 
       <!-- William -->
       <h3>General Game Implementation and Mini Games (William):</h3>
       <h4>What were your contrete goals for the week?</h4>
-      <p></p>
+      <p>Implement client side objects and interactables. Continue working on finalDoor class and other class objects that are to be rendered. </p>
 
       <h4>What goals were you able to accomplish?</h4>
-      <p></p>
+      <p>Implemented our key class with logic for picking up when colliding with a key instead of interaction. Used implementation of swamp and lilypad as a guide to implement finalDoor Classes and key class. These should be ready for testing once I figure out how to load these into the scene. </p>
 
       <h4>If the week went differently than you had planned, what were the reasons? note that this happens regularly…I would prefer you to be aggressive in what you want to try accomplish rather than limit yourself to goals you know you’ll easily achieve. so answering this question is more of a reflection on the development process and the surprises you encounter, it’s not at all an evaluation.</h4>
-      <p></p>
+      <p>Have not worked on interactables yet. We scrapped any object and interactables on the client side, as it seems we do not need entire classes, so I stopped working on those. Instead I implemented the key class on the server side using collision instead of interaction to pick up the key. </p>
 
       <h4>What are your specific goals for the next week?</h4>
-      <p></p>
+      <p>Interactables are still not up yet, so this week I have to make sure we can at least unlock a door. Then make sure we can put keys into the finalDoor class, then make sure we can press a button for the finalButton class. </p>
 
       <h4>What did you learn this week, if anything (and did you expect to learn it)?</h4>
-      <p></p>
+      <p>Caught up to Helen and Ravi’s implementation of their swamp class, I will use this to adjust my finalDoor class and make sure it is ready to be put into the scene. I feel like I have a better grasp of the pipeline in our game now. </p>
 
       <h4>What is your individual morale (which might be different from the overall group morale)?</h4>
-      <p></p>
+      <p>We only have ~1 week left, but my teammates seem confident :) We are so close to the complete playable game. I’ll make sure I get my part done ASAP. </p>
 
       <!-- Ravi -->
       <h3>General Game Implementation and Mini Games (Ravi):</h3>
@@ -136,22 +147,30 @@
       <!-- Brandon -->
       <h3>Physics (Brandon):</h3>
       <h4>What were your contrete goals for the week?</h4>
-      <p></p>
+      <p>My concrete goals for the week were to adjust the swamp colliding boxes, finish up the interactivity radius based on the architectural changes, abstract all the rigid body creation to be in one place instead of creating a rigid body in object class initialization, and implement the fundamental physics for the cannonball and piano keys for the next 2 minigames.</p>
 
       <h4>What goals were you able to accomplish?</h4>
-      <p></p>
+      <p>I accomplished most of my goals, all except the physics logic for the piano keys. I installed blender and messed around with the colliders of the walls because originally the colliders were rotated and slanted, which is not possible for AABB physics. I created a rough granularity of a ring with rectangular prisms that prevent it from phasing through the graphics while also making it seem like the player is actually colliding with the wall.
+	Additionally, I clarified with my group on the interactivity radius, and implemented a data structure to keep track of rooms. I rolled back the code a little bit to reference room IDs for players again, and used the IDs to lookup in the data structure the room the player is in. From there, the player gets the reference of all interactable within that room.
+	I also abstracted all the rigid body creation to be in a single place. Previously, rigid bodies would be generated by the layout JSON file we had. We decided to only rely on that file for creating the layout of the world. I created a helper file that initialized all rigid bodies, and if it was a special object in our world it would also create a class initialization and link that new class object to the rigid body.
+	Lastly, I roughly implemented the physics for the cannonball and did planning on the piano key physics. For the cannonball, I just created a fire() function that would set its configured velocity in the direction of a given player (via argument), and would handle special collisions to kill if it hits a player or to destroy the cannonball if it hits a static object. For the piano key, I plan to create some sort of spring dynamic, but I haven’t fully planned it out yet.
+</p>
 
       <h4>If the week went differently than you had planned, what were the reasons? note that this happens regularly…I would prefer you to be aggressive in what you want to try accomplish rather than limit yourself to goals you know you’ll easily achieve. so answering this question is more of a reflection on the development process and the surprises you encounter, it’s not at all an evaluation.</h4>
-      <p></p>
+      <p>	Other than communication and clarification on architecture, this week seemed to go as planned. I did do other things outside of class that contested for my time, but within the class everything went well.
+</p>
 
       <h4>What are your specific goals for the next week?</h4>
-      <p></p>
+      <p>My specific goals for next week are to finish the fundamental physics of the piano keys, finalize the cannonball physics with the rest of the code and integrate it to finish the 2nd minigame. 
+</p>
 
       <h4>What did you learn this week, if anything (and did you expect to learn it)?</h4>
-      <p></p>
+      <p>	I’m still trying to learn the discernment between waiting for clarification on deliverables and just committing to my understanding. For example, with the architecture clarification it can be a long process of back and forth communication. I am still unlearning the habit of excessive planning.
+</p>
 
       <h4>What is your individual morale (which might be different from the overall group morale)?</h4>
-      <p></p>
+      <p>	I feel somewhat worried because it might be infeasible to complete the 3rd minigame, since we don’t even have the 2nd minigame completed. Additionally, we need to figure out the map.
+</p>
 
       <!-- Helen Lin -->
       <h3> General Game Implementation and Mini Games (Helen Lin): </h3>
