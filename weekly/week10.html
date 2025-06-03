@@ -196,22 +196,45 @@
       <!-- Julie -->
       <h3>Graphics & Network (Julie):</h3>
       <h4>What were your contrete goals for the week?</h4>
-      <p></p>
+      <p>This week, I planned to complete the shadow system, organize and add point lights, decorate the swamp room, and import all the animated characters.</p>
 
       <h4>What goals were you able to accomplish?</h4>
-      <p></p>
+      <p>I loaded an animated cat character with idle animations and textures.</p>
+      <p>I also finished implementing point light shadows for both static and interactable models–each light now has two shadow cubemaps: one for static objects and one for interactables. I'm planning to add a third cubemap for players, but I'll need to see how it affects the performance.</p>
+      <p>I organized the point lights using a struct that applies the room transform and offset to easily place each light at the correct world position. I also stored point light instances in a map, where the key is the room name and the value is a vector of point lights. This structure helps manage point light shadow maps more efficiently.</p>
+      <p>During initialization, all static objects in each room are rendered into the static shadow maps of the lights within that room. Also, each interactable object is rendered into a nearby interactable shadow map. When an interactable object is updated, only the nearest interactable shadow map is re-rendered–so only one shadow map is updated at a time. Currently, shadows disappear correctly when a lilypad drops or a key is picked up. Also, if an interactable shadow map has nothing left to render–like when all related objects have been removed–it is marked as inactive so it won't be used in the fragment shader. This helps avoid unnecessary texture lookups. I chose not to render shadows for doors since their visual impact is minimal, but the performance cost is relatively high. Both static and interactable shadow maps are sampled in the fragment shader.</p>
+      <p>I implemented a skybox, but it didn't look quite right for our game, so we decided not to use it.</p>
+      <p>I added fireflies and dark fog to the swamp room, and made the water transparent.</p>
+      <p>Although we decided not to use the skybox, here's how it looked:</p>
+      <video controls>
+         <source src="../assets/w10-1.mp4" type="video/mp4">
+         Sorry, your browser doesn't support this video. 
+      </video>
+      <p>This is our current swamp room:</p>
+      <video controls>
+         <source src="../assets/w10-2.mp4" type="video/mp4">
+         Sorry, your browser doesn't support this video. 
+      </video>
+      <p>This is what it looks like when a player is submerged:</p>
+      <video controls>
+         <source src="../assets/w10-3.mp4" type="video/mp4">
+         Sorry, your browser doesn't support this video. 
+      </video>
 
       <h4>If the week went differently than you had planned, what were the reasons? note that this happens regularly…I would prefer you to be aggressive in what you want to try accomplish rather than limit yourself to goals you know you’ll easily achieve. so answering this question is more of a reflection on the development process and the surprises you encounter, it’s not at all an evaluation.</h4>
-      <p></p>
+      <p>Jasmine and I have been trying for days to export multiple animations in a single FBX file, but we haven't been able to get it working. At one point, even exporting just one animation stopped working. Some of our earlier exports did work, but we weren't sure why. Today, we finally figured out a way to reliably export one animation per FBX file, so we'll probably stick with that for now.</p>
 
       <h4>What are your specific goals for the next week?</h4>
-      <p></p>
+      <p>Now that we've finalized the map, I'm planning to load all the rooms into the game by tomorrow morning. </p>
+      <p>I'll also load all the animated characters and set the correct animations at the appropriate times (like idle or running). </p>
+      <p>Since we'll have a large number of rooms–over 20, excluding hallways–I'll make sure to render only the rooms visible to the current player. I also plan to implement player shadows, though I'll need to see how much I can optimize that.</p>
+      <p>Once Gabriel finishes the UI for the lobby page, I'll work on the networking side of it.</p>
 
       <h4>What did you learn this week, if anything (and did you expect to learn it)?</h4>
-      <p></p>
+      <p>I learned more about how skyboxes work. Before trying it myself, I thought a skybox was just something to make the background look infinite, but I didn't realize it moves with the camera and is mostly meant for open environments. I didn't expect the skybox to show through open doors where it shouldn't be visible. I also didn't know that to actually see the skybox from inside a room, I'd have to remove the walls completely. I think I could've made it look better with more time, but I can't really afford to take that risk right now.</p>
 
       <h4>What is your individual morale (which might be different from the overall group morale)?</h4>
-      <p></p>
+      <p>I'll do my best to get everything done, but I have two programming assignments due this Friday, so the next couple of days will be very challenging. I'm honestly really sad that our journey with this project is coming to an end. I wish the quarter were a bit longer.</p>
    </main>
 </body>
 </html>
