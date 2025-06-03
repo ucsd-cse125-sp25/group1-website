@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CSE 125 Group 1: Out of Tune</title>
+   <link rel="stylesheet" href="../styles.css">
+   <link rel="stylesheet" href="weekly.css">
+</head> 
+<body>
+   <header>
+      <nav>
+         <ul>
+            <li><a href="../index.html">Out of Tune</a></li>
+            <li><a href="../specs.html">Project Specs</a></li>
+            <li><a href="index.html">Weekly Reports</a></li>
+            <li><a href="../gallery.html">Gallery</a></li>
+            <li><a href="../video.html">Demo Videos</a></li>
+         </ul>
+       </nav>
+   </header>
+
+   <main>
+      <h1>Out of Tune: Weekly Progress Report Week 10 6/2</h1>
+
+      <h2>Group Status</h2>
+      <p></p>
+
+      <h2>Screenshots</h2>
+
+      <h2>Group Morale</h2>
+      <p></p>
+
+      <h2>Individual Reports</h2>
+
+      <!-- Jasmine -->
+      <h3>Art (Jasmine):</h3>
+      <h4>What were your contrete goals for the week?</h4>
+      <p></p>
+
+      <h4>What goals were you able to accomplish?</h4>
+      <p></p>
+
+      <h4>If the week went differently than you had planned, what were the reasons? note that this happens regularly…I would prefer you to be aggressive in what you want to try accomplish rather than limit yourself to goals you know you’ll easily achieve. so answering this question is more of a reflection on the development process and the surprises you encounter, it’s not at all an evaluation.</h4>
+      <p></p>
+
+      <h4>What are your specific goals for the next week?</h4>
+      <p></p>
+
+      <h4>What did you learn this week, if anything (and did you expect to learn it)?</h4>
+      <p></p>
+
+      <h4>What is your individual morale (which might be different from the overall group morale)?</h4>
+      <p></p>
+
+      <!-- Annie -->
+      <h3>Music (Annie):</h3>
+      <h4>What were your contrete goals for the week?</h4>
+      <p></p>
+
+      <h4>What goals were you able to accomplish?</h4>
+      <p></p>
+
+      <h4>If the week went differently than you had planned, what were the reasons? note that this happens regularly…I would prefer you to be aggressive in what you want to try accomplish rather than limit yourself to goals you know you’ll easily achieve. so answering this question is more of a reflection on the development process and the surprises you encounter, it’s not at all an evaluation.</h4>
+      <p></p>
+
+      <h4>What are your specific goals for the next week?</h4>
+      <p></p>
+
+      <h4>What did you learn this week, if anything (and did you expect to learn it)?</h4>
+      <p></p>
+
+      <h4>What is your individual morale (which might be different from the overall group morale)?</h4>
+      <p></p>
+
+      <!-- Graphics -->
+      <h3>Graphics (Gabriel):</h3>
+      <h4>What were your contrete goals for the week?</h4>
+      <p>My concrete goals were:</p>
+      <ol>
+         <li>Figure out a way to use a more consistent position measurement for UI elements OR hard code different layouts.</li>
+         <li>Add the keys display (will dynamically add keys as players collect them).</li>
+         <li>Refactor Canvas so that it may be reused for different screens aside from the game world.</li>
+      </ol>
+
+      <h4>What goals were you able to accomplish?</h4>
+      <p>I managed to accomplish all goals except refactoring canvas, and there’s a reason for that which I’ll get into in more detail below. I ended up hard-coding different layouts depending on window size, and I figured out a way of centralizing elements when their scales are changed for consistency across different window dimensions. The key display has also been added. </p>
+
+      <h4>If the week went differently than you had planned, what were the reasons? note that this happens regularly…I would prefer you to be aggressive in what you want to try accomplish rather than limit yourself to goals you know you’ll easily achieve. so answering this question is more of a reflection on the development process and the surprises you encounter, it’s not at all an evaluation.</h4>
+      <p>As we approach the end of this project, I’m starting to shift my focus towards other screens (main menu, game over, victory). I realized that it wouldn’t make much sense to refactor the canvas object because a game canvas works very differently from an interactable “menu” where the player has to click buttons. I think it would make more sense to create an interface for these different screens and implement them individually, especially because there are only 3 different screens as far as I’m aware.
+</p>
+
+      <h4>What are your specific goals for the next week?</h4>
+      <ol>
+         <li>Implement a main menu.</li>
+         <li>Implement a game over screen.</li>
+         <li>Implement a victory screen.</li>
+      </ol>
+      <p>All of these screens will be interactable and won’t obscure the user’s cursor like in-game.</p>
+
+      <h4>What did you learn this week, if anything (and did you expect to learn it)?</h4>
+      <p>	I learned that I should be careful with certain GPU functions, as these can tank performance if left unchecked. I was using a function to enable GL_BLEND to render transparent textures, and didn’t realize I should disable them after drawing the objects. My groupmate brought this to my attention and fixed it by disabling it after the function had run its use.
+</p>
+
+      <h4>What is your individual morale (which might be different from the overall group morale)?</h4>
+      <p>	Feeling a little nervous. With the deadline approaching, I’m feeling like we’re going to end up having to crunch to see this project through. This isn’t that big of a deal though, as I was expecting it to happen eventually this quarter.</p>
+
+      <!-- William -->
+      <h3>General Game Implementation and Mini Games (William):</h3>
+      <h4>What were your contrete goals for the week?</h4>
+      <p></p>
+
+      <h4>What goals were you able to accomplish?</h4>
+      <p></p>
+
+      <h4>If the week went differently than you had planned, what were the reasons? note that this happens regularly…I would prefer you to be aggressive in what you want to try accomplish rather than limit yourself to goals you know you’ll easily achieve. so answering this question is more of a reflection on the development process and the surprises you encounter, it’s not at all an evaluation.</h4>
+      <p></p>
+
+      <h4>What are your specific goals for the next week?</h4>
+      <p></p>
+
+      <h4>What did you learn this week, if anything (and did you expect to learn it)?</h4>
+      <p></p>
+
+      <h4>What is your individual morale (which might be different from the overall group morale)?</h4>
+      <p></p>
+
+      <!-- Ravi -->
+      <h3>General Game Implementation and Mini Games (Ravi):</h3>
+      <h4>What were your contrete goals for the week?</h4>
+      <p></p>
+
+      <h4>What goals were you able to accomplish?</h4>
+      <p></p>
+
+      <h4>If the week went differently than you had planned, what were the reasons? note that this happens regularly…I would prefer you to be aggressive in what you want to try accomplish rather than limit yourself to goals you know you’ll easily achieve. so answering this question is more of a reflection on the development process and the surprises you encounter, it’s not at all an evaluation.</h4>
+      <p></p>
+
+      <h4>What are your specific goals for the next week?</h4>
+      <p></p>
+
+      <h4>What did you learn this week, if anything (and did you expect to learn it)?</h4>
+      <p></p>
+
+      <h4>What is your individual morale (which might be different from the overall group morale)?</h4>
+      <p></p>
+
+      <!-- Brandon -->
+      <h3>Physics (Brandon):</h3>
+      <h4>What were your contrete goals for the week?</h4>
+      <p>My concrete goals were to finish the fundamental physics of the piano keys, finalize the cannonball physics with the rest of the code and integrate it to finish the 2nd minigame. I picked up other tasks here and there.
+</p>
+
+      <h4>What goals were you able to accomplish?</h4>
+      <p>I finished all the physics code, but it is still untested because the minigames have not yet been implemented enough. I did pick up other tasks such as adjusting bounding boxes of the swamp room again to prevent respawning on top of people from clipping. I worked on some map generation room to allow for cycles, but I think we are scrapping it because it might not be best for the experience. I spent most of my time figuring out room ID changes for players and door interaction.</p>
+
+      <h4>If the week went differently than you had planned, what were the reasons? note that this happens regularly…I would prefer you to be aggressive in what you want to try accomplish rather than limit yourself to goals you know you’ll easily achieve. so answering this question is more of a reflection on the development process and the surprises you encounter, it’s not at all an evaluation.</h4>
+      <p>	I failed to understand the codebase enough when working on my tasks. For the room ID changes and door interaction, I was working on it a lot just to realize that the implementation of rooms is not even fundamentally implemented. I had to put something random together so that I could work on my task. I feel somewhat bad about the current code I am pushing because it is pretty messy and poorly documented, and it doesn’t have much consideration of the other code being pushed from the others. I wish I had actually studied the codebase more in the past.</p>
+
+      <h4>What are your specific goals for the next week?</h4>
+      <p>My specific goals for the next week are to actually test the physics code for the cannonball and piano keys and make any fixes on the door/room code that I hacked together.</p>
+
+      <h4>What did you learn this week, if anything (and did you expect to learn it)?</h4>
+      <p>	Documentation and architecture does not mix well with deadlines. The codebase is changing at such a rapid pace due to the deadline that it forces me to push subpar code that is not designed to be maintainable. I should have planned more, but it is difficult because the code changes so quickly.</p>
+
+      <h4>What is your individual morale (which might be different from the overall group morale)?</h4>
+      <p>I am a little spooked. I still need to work on another class due Tuesday, which is eating up my time. Things still don’t seem like it will be done, which is somewhat depressing. The code is moving so quickly that I honestly don’t know how close we are, so I could be underestimating. I personally don’t see much value in sacrificing my wellbeing for this class, but maybe this is something I have to humble myself in just for this final project of my entire undergraduate years.</p>
+
+      <!-- Helen Lin -->
+      <h3> General Game Implementation and Mini Games (Helen Lin): </h3>
+      <h4>What were your contrete goals for the week?</h4>
+      <p> Add in the audio logic and interaction for the swamp minigame </p>
+
+      <h4>What goals were you able to accomplish?</h4>
+      <p> Got audio logic and interaction hooked up but then Annie adjusted the volume ratios of the audio files so I still need to adjust the code and hear it to ensure we can hear all the audio we want. Frog intereaction was connected up. 
+      </p>
+
+      <h4>If the week went differently than you had planned, what were the reasons? note that this happens regularly…I would prefer you to be aggressive in what you want to try accomplish rather than limit yourself to goals you know you’ll easily achieve. so answering this question is more of a reflection on the development process and the surprises you encounter, it’s not at all an evaluation.</h4>
+      <p>Wanted to work more over the weekend but had long events every day on Friday, Saturday, and Sunday. So didn't make as much progress as I wanted.</p>
+
+      <h4>What are your specific goals for the next week?</h4>
+      <p>Since demo is this week. Hopefully we get everthing done but progress order wise I would first to is to help Brandon get his door and room id update PR in, then adjust the audio ratios make sure they work and then utilize his logic to make it so that the swam ambience doesn't play the entire game as it does right now. Then with the logic in then hopefully Julie has the graphics in for the 3rd room if not I'll start with just the sever side logic and then client side after for the third doom</p>
+
+      <h4>What did you learn this week, if anything (and did you expect to learn it)?</h4>
+      <p>Nothing major but learned more about unique ptr in c++ and other pointers in c++ as we had unique pointers in our code initially which impacted the logic with the Door as two room need to own the door and so I learned more about it.</p>
+
+      <h4>What is your individual morale (which might be different from the overall group morale)?</h4>
+      <p>Excited but nervers really hoping we can finish all that we desire to finish. </p>
+
+      <!-- Julie -->
+      <h3>Graphics & Network (Julie):</h3>
+      <h4>What were your contrete goals for the week?</h4>
+      <p></p>
+
+      <h4>What goals were you able to accomplish?</h4>
+      <p></p>
+
+      <h4>If the week went differently than you had planned, what were the reasons? note that this happens regularly…I would prefer you to be aggressive in what you want to try accomplish rather than limit yourself to goals you know you’ll easily achieve. so answering this question is more of a reflection on the development process and the surprises you encounter, it’s not at all an evaluation.</h4>
+      <p></p>
+
+      <h4>What are your specific goals for the next week?</h4>
+      <p></p>
+
+      <h4>What did you learn this week, if anything (and did you expect to learn it)?</h4>
+      <p></p>
+
+      <h4>What is your individual morale (which might be different from the overall group morale)?</h4>
+      <p></p>
+   </main>
+</body>
+</html>
