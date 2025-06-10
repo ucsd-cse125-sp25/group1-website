@@ -1,32 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSE 125 Group 1: Out of Tune</title>
-      <link rel="stylesheet" href="styles.css">
-</head> 
-<body>
-   <!-- Create a nav bar with the OUt of Tune as one element directing over yere -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./weekly/weekly.css" />
+    <link rel="stylesheet" href="specs.css" />
+  </head>
+  <body>
+    <!-- Create a nav bar with the OUt of Tune as one element directing over yere -->
 
-   <nav>
-        <ul>
-            <li><a href="index.html">Out of Tune</a></li>
-            <li><a href="specs.html">Project Specs</a></li>
-            <li><a href="weekly/index.html">Weekly Reports</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="video.html">Demo Videos</a></li>
-        </ul>
-    </nav>
-
-    <!-- Add a header with the title and a short description -->
     <header>
-        <h1>Out of Tune: Weekly Progress Report Week 3 4/15</h1>
+      <nav>
+        <ul>
+          <li id="nav-title">
+            <a href="index.html">&#9835; Out of Tune &#9835;</a>
+          </li>
+          <li><a href="specs.html">Project Specs</a></li>
+          <li><a href="weekly/index.html">Weekly Reports</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="video.html">Demo Videos</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!-- Add a main section with some content about the game -->
     <main>
-      <iframe src="https://docs.google.com/document/d/e/2PACX-1vSHBBI1KVYyYnManWwUpRyf6USe0ahcOdReJ3ZRg4_fYh6TEQln-RlqK2EmR8-FDOefmjEnBkVlePQX/pub?embedded=true" width=800 height=1600></iframe>
-      </main>
-</body>
+      <h1>Out of Tune: Project Specs</h1>
+
+      <h2>Project Description</h2>
+
+      <h3>Game Overview</h3>
+
+      <h4>Description</h4>
+
+      <h5>What kind of game are you planning to build?</h5>
+      <p>
+        Escape room style, cooperative game with a music and horror theme. Each
+        level contains multiple rooms that may contain minigames or keys.
+        Players must find and collect keys and bring them to the exit door in
+        order to escape to the next level.
+      </p>
+
+      <h4>Objective</h4>
+
+      <h5>
+        What are the goals of the game, how do players win, how do they lose?
+      </h5>
+      <p>
+        The objective is to find the keys to unlock the door to escape the
+        level. Each level has a time limit. If the players do not escape the
+        level within the time limit, they lose the game. If they escape within
+        the time limit, they win. Each time a player dies, that player must wait
+        a certain amount of time before they can respawn in the level.
+      </p>
+
+      <h4>Unique Aspects</h4>
+
+      <h5>What are the interesting or unique aspects to your game?</h5>
+      <p>
+        Our game will blend minigames, co-op, and music with an unsettling
+        atmosphere and charming characters. It’ll throw players into a world of
+        horror, but it encourages them to face it light-heartedly with its
+        cooperative gameplay and goofy characters. This game will be self-aware:
+        it embraces the contradictory joy of being in scary scenarios when you
+        have people to laugh at.
+      </p>
+
+      <p>
+        We will aim to keep our game replayable by choosing minigames that are
+        also skill-based so that once you know the solution, they are still fun
+        to play → don’t make one-trick puzzles that are uninteresting the second
+        time around. Some minigames will also require collaboration between 2-4
+        players and cannot be completed without them.
+      </p>
+
+      <p>
+        Players also will be faced with music challenges that are reflective of
+        real music theory practices.
+      </p>
+
+      <h3>Features</h3>
+
+      <h4>Must Haves:</h4>
+
+      <ul>
+        <li>Around 3–4 minigames</li>
+        <li>An escape room</li>
+        <li>Music-incorporated gameplay</li>
+        <li>Keys and exit door functionality</li>
+        <li>Jump scares</li>
+        <li>Game timer</li>
+      </ul>
+
+      <h4>Would Be Really Nice to Have:</h4>
+      <ul>
+        <li>More minigames</li>
+        <li>Procedural (Random) map generation (with seeding?)</li>
+        <li>Minimap or compass with user locations</li>
+        <li>Voice channels</li>
+        <li>Character customization</li>
+      </ul>
+
+      <h4>Cool But Only If Ahead Of Schedule</h4>
+      <ul>
+        <li>Leaderboard of best times</li>
+        <li>Several levels (escape rooms)</li>
+        <li>Monsters/enemies in non-puzzle rooms</li>
+        <li>Proximity chat</li>
+      </ul>
+
+      <h2>Group Management</h2>
+      <h3>Team Members</h3>
+      <ul>
+        <li>Julie Hong</li>
+        <li>Gabriel Ikezaki</li>
+        <li>Helen Lin</li>
+        <li>Brandon Reponte</li>
+        <li>Ravi Shende</li>
+        <li>Jasmine Vodhanel</li>
+        <li>Annie Wong</li>
+        <li>William Zhang</li>
+      </ul>
+
+      <h3>Roles</h3>
+      <p>
+        We will not have any different leaders or group managers, because we
+        will function as a democracy. However, we will still have different
+        roles in game development.
+      </p>
+
+      <h3>Decision Making</h3>
+      <p>
+        For large game decisions, we will make decisions as a democracy, with a
+        majority (5 people out of 8) needed. For smaller architectural
+        decisions, it will be up to the groups that are working those pieces.
+      </p>
+
+      <h3>Decision Making</h3>
+      <p>
+        For large game decisions, we will make decisions as a democracy, with a
+        majority (5 people out of 8) needed. For smaller architectural
+        decisions, it will be up to the groups that are working those pieces.
+      </p>
+
+      <h3>Communication and Collaboration</h3>
+      <p>
+        We will communicate online using discord and zoom. We created a discord
+        server where we’ll text decisions, recaps, resources, and also ping when
+        necessary. We plan on using lectures for in-person full team meetings.
+        Sub-groups will also decide when and how their members will meet
+        throughout the week for group-specific decisions and meetings, be it in
+        person or online.
+      </p>
+
+      <h3>Scheduling</h3>
+      <p>
+        Throughout the week, each person will check against the schedule below
+        and make sure that tasks are being completed to schedule. If we see that
+        we’re behind on any part, we can have people volunteer to help others in
+        need. If everyone is behind, we will meet to talk about narrowing our
+        scope.
+      </p>
+
+      <p>
+        We will have full-group in-person meetings during each lecture. Then,
+        sub-groups will have meetings either in person or on zoom at their
+        discretion.
+      </p>
+
+      <h3>Weekly Group Status Reports</h3>
+      <p>
+        Each person will send updates of how they are doing and if they are on
+        track in a discord channel for updates and brief checking on updates
+        when we meet up. We will have a person taking notes of what happens
+        during the meetings. We each will write our respective portions of the
+        project, send it to one person that will check and make sure that
+        everything is ready and completed by deadline.
+      </p>
+
+      <h2>Project Development</h2>
+      <h3>Development Roles</h3>
+      <ul>
+        <li>
+          <strong>Art/3D Modeling</strong>
+          <ul>
+            <li>Jasmine</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Music/Audio</strong>
+          <ul>
+            <li>Annie</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Graphics</strong>
+          <ul>
+            <li>Gabriel</li>
+            <li>Julie</li>
+            <li>Helen</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Developer (Networking)</strong>
+          <ul>
+            <li>Julie</li>
+            <li>Gabriel</li>
+            <li>Ravi</li>
+            <li>Brandon</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Developer (Physics)</strong>
+          <ul>
+            <li>Brandon</li>
+            <li>Ravi</li>
+            <li>William</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Developer (General, Minigames)</strong>
+          <ul>
+            <li>Ravi</li>
+            <li>Helen</li>
+            <li>William</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>Tools</h3>
+<ul>
+  <li><strong>Art/3D Modeling:</strong> Blender, Adobe Photoshop</li>
+  <li><strong>Graphics:</strong> OpenGL</li>
+  <li><strong>Language:</strong> C++</li>
+  <li><strong>Networking:</strong> Boost.Asio</li>
+  <li><strong>Communication:</strong> Discord</li>
+  <li><strong>Physics:</strong> Own Physics</li>
+  <li><strong>Version Control:</strong> GitHub, Google Drive</li>
+  <li><strong>Tasks:</strong> GitHub Projects</li>
+  <li>
+    <strong>Auto-Formatting and Linting:</strong> TBD – probably one of the following:
+    <ul>
+      <li>Clang-format</li>
+      <li>clang-tidy</li>
+      <li>cppcheck</li>
+      <li>cpplint</li>
+      <li>oclint</li>
+      <li>uncrustify</li>
+    </ul>
+    <a href="https://github.com/caramelomartins/awesome-linters?tab=readme-ov-file#cc" target="_blank">
+      Reference: Awesome Linters
+    </a>
+  </li>
+</ul>
+
+    <h3> Testing</h3>
+    <p>For testing, we plan on relying on Github Actions to maintain functionality of smaller codebase fragments. For each minigame, we’ll test the player’s inputs, their outputs, failure and success in respect to the minigame’s winning condition. We will do play-tests before merging each branch.
+For play-tests, we will create a checklist of checks to do, adding onto it as more features are implemented.
+</p>
+
+    <h3> Documentation</h3>
+    <p>We will create google docs for all player documentation (how to play, strategies, etc.) as well as internal documentation (project specifications, meeting notes, branching strategies, etc.). Those will be done as an entire group and stored in a shared google folder. All code-related specs and ADRs and information will be put on the repository.</p>
+
+    <p>
+Everyone will do documentation for the code that they write. Subgroups will do documentation for the main components that they work on. Everyone is expected to write the doc-strings for the functions that they write. File doc-strings will be written by the people who are working on that file and creating it.
+</p>
+
+    <h2>Project Schedule</h2>
+    <p>Define a set of milestones with a specific definition of what each milestone is, what it means to complete each milestone, and when you expect to complete them. Define the milestones at two scales, a high level set of key milestones like integration and minimal viable game, and a low level set of weekly milestones.</p>
+
+
+    <table border="1">
+  <thead>
+    <tr>
+      <th>Week</th>
+      <th>Overall,General</th>
+      <th>Art</th>
+      <th>Audio</th>
+      <th>Graphics</th>
+      <th>Networking</th>
+      <th>Physics/Generation</th>
+      <th>Game Play</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2</td>
+      <td>Map out how all the pieces will work together. Start APIs and create class structures.</td>
+      <td>Concept Art</td>
+      <td></td>
+      <td>Get a world space (ground, skybox) with a cube that can move around with WASD.</td>
+      <td>Build basic client/server system, design and implement message protocol</td>
+      <td>Implement basic movement + jumping</td>
+      <td>Choose 3 minigames/Minigame design/idea</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Start working on hallway and room mechanics, implement game timer</td>
+      <td>Start modeling rooms and environments and minigame rooms</td>
+      <td>Making music sketches</td>
+      <td>Connect client and server together (ensure compatibility for graphics); Start support for 3D model files (models exported from modeling tools can be rendered in game world)</td>
+      <td>Game state synchronization</td>
+      <td>Implement collision detection + object interaction</td>
+      <td>Implement key, jump scare, death mechanism</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Create first level map and plan escape sequence</td>
+      <td>Continue working on minigame rooms</td>
+      <td></td>
+      <td>Finalize support for 3D model files, add textures and materials</td>
+      <td>Game events & interactions</td>
+      <td>Implement minigame physics</td>
+      <td>Start Mini game 1</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Design main escape room mechanics</td>
+      <td>Model interactable items</td>
+      <td>Implement SFX</td>
+      <td>Add support for UI: text and graphics that will be displayed on screen</td>
+      <td>Multiplayer audio sync & immersion</td>
+      <td>Procedural map generation</td>
+      <td>Finish Minigame 1 logic, start 2</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Connect minigame 1 with first map, test cohesiveness.</td>
+      <td>Start modeling and rigging player character</td>
+      <td></td>
+      <td>Start adding support for animations for characters, objects, UI</td>
+      <td>Sync animations</td>
+      <td></td>
+      <td>Finish minigame 2 logic and start 3</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Add in minigame 2. Implement voice channels.</td>
+      <td>Keep working on player character</td>
+      <td></td>
+      <td>Finalize support for animations, optimize graphics engine</td>
+      <td>Networked player death & respawn system</td>
+      <td></td>
+      <td>Finish minigame 3</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Add in minigame 3. Implement procedural map generation if time permits</td>
+      <td>Animations</td>
+      <td></td>
+      <td>Continue optimization</td>
+      <td>Handle disconnect/reconnect & cleanup & lobby system</td>
+      <td></td>
+      <td>Create more mini games if time permits</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Implement character customization if time permits</td>
+      <td>Keep working on animations</td>
+      <td></td>
+      <td>Finalize optimization</td>
+      <td>Optimization</td>
+      <td></td>
+      <td>Create more mini games if time permits</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td colspan="7">Finalize Game</td>
+    </tr>
+  </tbody>
+</table>
+
+    </main>
+  </body>
 </html>

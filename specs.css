@@ -1,0 +1,8 @@
+main ul, main ol {
+  list-style-type: initial;
+  margin-left: 1.5em;
+}
+
+main {
+   margin-bottom: 2rem;
+}

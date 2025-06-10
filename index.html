@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSE 125 Group 1: Out of Tune</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="index.css" />
+
   </head>
   <body>
     <!-- Create a nav bar with the OUt of Tune as one element directing over yere -->
 
     <nav>
       <ul>
-        <li><a href="index.html">Out of Tune</a></li>
+        <li id="nav-title">
+          <a href="index.html">&#9835; Out of Tune &#9835;</a>
+        </li>
         <li><a href="specs.html">Project Specs</a></li>
         <li><a href="weekly/index.html">Weekly Reports</a></li>
         <li><a href="gallery.html">Gallery</a></li>
@@ -21,12 +25,35 @@
 
     <!-- Add a header with the title and a short description -->
     <header>
-      <h1>Out of Tune</h1>
+      <h1>&#9835; Out of Tune &#9835;</h1>
+
+      <div class="character-images">
+        <div class="image-wrap">
+          <img src="./assets/Asmodeus.png" alt="Asmodeus Character" />
+          <a href="specs.html" class="image-link" id="asmodeus-link">Project Specs</a>
+        </div>
+
+        <div class="image-wrap">
+          <img src="./assets/Mimi.png" alt="Mimi Character" />
+          <a href="weekly/index.html" class="image-link" id="mimi-link">Weekly Reports</a>
+        </div>
+
+        <div class="image-wrap">
+          <img src="./assets/Ribert.png" alt="Ribert Character" />
+          <a href="gallery.html" class="image-link" id="ribert-link">Gallery</a>
+        </div>
+
+        <div class="image-wrap">
+          <img src="./assets/Tony.png" alt="Tony Character" />
+          <a href="video.html" class="image-link" id="tony-link">Demo Videos</a>
+        </div>
+      </div>
     </header>
 
     <!-- Add a main section with some content about the game -->
     <main>
       <section id="game-info">
+        <h2>Game Overview</h2>
         <p>
           Escape room style, cooperative game with a music and horror theme.
           Each level contains multiple rooms that may contain minigames or keys.
@@ -34,32 +61,32 @@
           order to escape to the next level.
         </p>
       </section>
-      <section id="game-info">
+      <section id="game-progress">
         <h2>Week 4 Progress Screenshot</h2>
         <p>Initial 3d Rendering of Game Play Map</p>
+        <img src="./assets/w4i6.png" alt="Week 4 Screenshot" width="100%" />
+        <h2>Week 5 Progress Screenshot</h2>
+        <p>Drafted a Swamp Ambience Track</p>
+        <audio controls>
+          <source src="./assets/SwampAmbience.wav" type="audio/wav" />
+        </audio>
         <img
-          src="./assets/w4i6.png"
-          alt="Week 4 Screenshot"
+          src="assets/SwampAmbienceW4.png"
+          alt="Week 5 Screenshot"
           width="100%"
         />
-        <h2>Week 5 Progress Screenshot</h2>
-        <p> Drafted a Swamp Ambience Track</p>
-        <audio controls>
-            <source src="./assets/SwampAmbience.wav" type ="audio/wav">
-        </audio>
-        <img src = "assets/SwampAmbienceW4.png" alt = "Week 5 Screenshot" width = "100%"/>
-        <img src = "assets/w5i1.png" alt = "Screenshot of the game" width = "100%">
+        <img src="assets/w5i1.png" alt="Screenshot of the game" width="100%" />
         <h2>Week 6 Progress Screenshot</h2>
-        <p> Game Play Characters Under Creation</p>
-        <img src = "assets/w6i6.png" alt = "Screenshot of the game" width = "100%">
+        <p>Game Play Characters Under Creation</p>
+        <img src="assets/w6i6.png" alt="Screenshot of the game" width="100%" />
 
         <h2>Week 7 Progress Screenshot</h2>
         <p>Swamp Room's Rendering</p>
-        <img src = "assets/w7i2.png" alt = "Screenshot of the game" width = "100%">
+        <img src="assets/w7i2.png" alt="Screenshot of the game" width="100%" />
 
         <h2>Week 8 Progress Screenshot</h2>
-        <p> Circus Room model</p>
-        <img src = "assets/w8i3.png" alt = "Screenshot of the game" width = "100%">
+        <p>Circus Room model</p>
+        <img src="assets/w8i3.png" alt="Screenshot of the game" width="100%" />
       </section>
     </main>
   </body>
