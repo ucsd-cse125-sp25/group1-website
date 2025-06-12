@@ -9,7 +9,7 @@ body {
 }
 
 nav {
-  background-color: #556B2F;
+  background-color: #556b2f;
   color: white;
   padding: 15px;
   text-align: start;
@@ -33,16 +33,15 @@ nav li a {
 }
 
 nav li a:hover {
-  background-color: #8FBC8F;
+  background-color: #8fbc8f;
 }
 
 #nav-title {
-  font-weight:bold;
+  font-weight: bold;
   font-size: 1.5em;
 }
 
-
-@media (max-width: 600px) {
+@media (max-width: 780px) {
   nav ul {
     flex-direction: column;
     align-items: flex-start;
@@ -56,3 +55,4 @@ nav li a:hover {
 video {
   width: 80vw;
 }
+
