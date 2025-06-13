@@ -35,20 +35,165 @@
         concept to what you implemented? If it did change, how did it change and
         why?
       </h3>
-      <p></p>
+      <p>
+        One of the driving themes of our game was horror. We created this game
+        with the intention of unsettling and scaring the player, and while the
+        art direction and music still make for an unsettling atmosphere, the
+        gameplay itself ended up not emphasizing horror as much. We had
+        originally planned for the players to be met with jumpscares upon
+        failing minigames and while exploring the map, but it ended up being cut
+        off from the game due to time constraint and the need to focus on the
+        functionality.
+      </p>
+
+      <p>
+        We had also planned for the minigames to have more replayability with
+        randomized patterns and levels and procedurally generated rooms. These
+        features were also cut because we wanted to make sure that the minigames
+        were cohesive in the context of the full game. Our final game still has
+        a lot of charm to it thanks to the character design, music and
+        cooperative minigames, it’s just not as scary and replayable as we’d
+        hoped.
+      </p>
+
+      <p>
+        The Swamp minigame room dived more into the horror aspect since we had
+        more time working on it. For the Circus and Piano room, we focused more
+        on getting it done and so there were less horror leading aspects for the
+        last two minigames.
+      </p>
+
+      <p>
+        The overall game did turn out to need less teamwork than we originally
+        planned. The swamp was doable by one person, and the circus could also
+        be done by one person. That said, the parkour key room turned out to be
+        a great way to foster creative teamwork.
+      </p>
 
       <h3>
         Design: How does your final project design compare to the initial
         design, and what are the reasons for the differences, if any?
       </h3>
-      <p></p>
+      <p>
+        We stayed true to the original design of our project even towards the
+        later weeks of the course, our final design just ended up being a
+        “compacted” version of the original. The initial design and theme for
+        the game was a horror hotel theme with the minigame rooms being their
+        own alternative universe, we stayed true to the design as we agreed on a
+        general theme (hotel room, swamp, circus, and a piano room) and our
+        artist, Jasmine, made the models as the quarter went along. As
+        previously mentioned, the charming characters, unsettling art direction
+        and cooperative gameplay are still very much present in our final
+        project, but due to time constraints we had to cut off some features
+        that made our game a little less whole than what we had initially
+        envisioned.
+      </p>
+
+      <p>
+        <strong>[Gabriel Ikezaki]:</strong> I genuinely don’t think lack of
+        commitment or time budget were the issue here—to the contrary, I think
+        we put a lot of effort into our game and 10 weeks is sufficient—, we
+        just got a little too ambitious.
+      </p>
 
       <h3>
         Schedule: How does your final schedule compare with your projected
         schedule, and what are the reasons for the differences, if any? (You
         should be able to glean this from your status reports.)
       </h3>
-      <p></p>
+      <p>
+        We generally followed the order of milestones proposed by our projected
+        schedules, but the time it took to finish each milestone varied a lot.
+        Some tasks took less than we expected, others took longer, and a few
+        took about as much as we had thought. The reason for this is that, while
+        planning and following an order of tasks isn’t that hard, predicting how
+        long tasks take is much trickier, especially when many of us weren’t
+        familiar with creating a game, let alone a game engine. Networking,
+        graphics, physics, memory management are all concepts we have exposure
+        to from isolated courses, but orchestrating everything together (and
+        sometimes building from scratch) within the shared context of a game
+        made our projected schedule difficult to replicate precisely.
+      </p>
+
+      <p>
+        We were pretty aggressive with the timeline, we had isolated working
+        graphics and network working in around week 3 and then connected it
+        around week 4. The first minigame took much longer than we scheduled,
+        being mostly completed only around week 7 almost 8 and then finished at
+        the start of week 10. It took longer than expected because many of the
+        structures and things that were necessary i.e. custom collision response
+        were not in place which delayed development. We also had to restructure
+        our architecture to fit requirements that we had not previously thought
+        of, a lot of redoing and reworking of classes. Minigame 2 and 3 took
+        much less time than we planned since the dependencies were in place and
+        we knew what and how to create for the things that were needed that
+        weren’t implemented yet. Minigame 2 and 3 were implemented
+        simultaneously, taking only 2 to 3 days at most to move from basic
+        layout to full functionality.
+      </p>
+
+      <p>
+        <strong>[Gabriel Ikezaki] </strong> We had initially planned for UI
+        implementation to be a 1 week task, but it ended up lasting until the
+        end of the project. This is because creating HUD elements and text was a
+        lot trickier than we had anticipated, and we had to brute force the
+        creation of most assets. Creating a dynamic font pipeline could be a
+        project of its own really, and we had to find workarounds that suited
+        our needs.
+      </p>
+
+      <p>
+        <strong>[Ravi Shende]</strong> In terms of how components connected with
+        each other, I would say our timeline ran pretty smoothly. However, the
+        main problems came when we had to restructure our physics while creating
+        minigame 1. Minigame 1 exposed oversights in our original architecture,
+        so we had to restructure that while developing the minigame, and then
+        getting used to and using our new architecture took some time too. A lot
+        of time, minigames were stuck in the basic interaction logic phase, but
+        it took a while for it to all connect and then see our changes in the
+        game.
+      </p>
+
+      <p>
+        <strong> [Jasmine Vodhanel] </strong>Personally I was slacking a little
+        on my own schedule because I didn’t really make the circus room until
+        the last two days 🤡 but otherwise wasn’t too bad and managed to get all
+        the models I needed to get done finished in the end. I think I didn’t
+        account for things like midterm week and other projects taking up my
+        time in my original schedule.
+      </p>
+
+      <p>
+        <strong>[William Zhang] </strong> Gameplay wise, we were quite on track
+        with our schedule. However, a lot of our implementations earlier on such
+        as our designs for door classes, object classes, interactable classes,
+        key class, room class, were all being revamped as we made the minigames
+        and progressed with other aspects of our game. The first few weeks spent
+        designing these classes definitely paid off, but these classes were
+        technically not completed and hashed out until later.
+      </p>
+
+      <p>
+        <strong>[Brandon Reponte] </strong> Physics went well and mostly
+        according to the initial plan, but after week 4 the milestones for
+        physics became ad hoc. It was extremely difficult to plan what we would
+        have needed for the minigames until we began to actually implement the
+        physics for them. Planning the architecture entirely is just infeasible,
+        and the ad hoc approach was something we just had to do but that
+        severely delayed development.
+      </p>
+
+      <p>
+        <strong> [Julie Hong]</strong> I worked really hard throughout the
+        quarter, focusing on both networking and graphics. I did my best to
+        implement new features each week, and every week felt intense and full
+        of learning. However, a lot of work ended up coming in at the last
+        minute–for example, the FBX files for the player characters were ready
+        the night before the demo, and the map was finalized two days before–so
+        I had a lot to handle right before the deadline. Even though I now feel
+        like I could have done more, I know I gave it my best throughout the
+        quarter.
+      </p>
 
       <h2>General Questions</h2>
       <h3>
@@ -58,28 +203,346 @@
         platforms? Do you have any tips or suggestions for future groups for
         their development environment?
       </h3>
-      <p></p>
+      <ul>
+        <li>
+          Tools:
+          <ul>
+            <li>VS Code (Mac)</li>
+            <li>Visual Studio (Windows)</li>
+            <li>Blender</li>
+            <li>Photoshop</li>
+            <li>Clang Autoformat</li>
+            <li>GitHub & Github Actions</li>
+            <li>FI Studio</li>
+            <li>FMOD</li>
+            <li>Discord</li>
+            <li>
+              Tips:
+              <ul>
+                <li>
+                  <strong>[Ravi Shende] </strong> I would recommend setting up
+                  an autoformatter and linter on everyone’s devices as soon as
+                  possible. That way you don’t have to reformat everything that
+                  was written halfway through the quarter.
+                </li>
+                <li>
+                  <strong>[Brandon Reponte] </strong>Cross platform support was
+                  extremely helpful for the purpose of development. Our team
+                  used both Windows and Mac, so allowing for the compatibility
+                  in development made development smoother for everyone. It was
+                  also set up pretty quickly, and although there were some bugs
+                  it didn’t take long for cross platform support to be well
+                  established.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          Build:
+          <ul>
+            <li>We used CMake for building and built for Windows and mac</li>
+            <li>
+              To make it work for cross platform, we had CMake check the OS of
+              the computer and then depending on the OS run, OS specific CMake
+              commands
+            </li>
 
+            <li>
+              Tips:
+              <ul>
+                <li>
+                  <strong>[Helen Lin]</strong>One thing I might change is
+                  potentially spending some time at the beginning to look into
+                  speeding up the build and initial load time since it got
+                  progressively worse over the quarter and took more and more
+                  time just waiting for them.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
       <h3>
         What group mechanics decisions worked out well, and which ones (if any)
         did not? Why?
       </h3>
-      <p></p>
+      <p>
+        The way we decided to assign roles ended up working well: we each had a
+        focus for most of the project, but some of our teammates worked in
+        multiple teams, and that made coordinating among ourselves easier. Our
+        plan to consistently meet up twice a week in the lab also gave us plenty
+        of opportunities to update each other and keep everyone in the loop of
+        what was being done that week. We also had an updates channel in discord
+        for progress that we want to during time outside the meetings. We
+        could’ve done a better job at establishing tasks for the long run. One
+        of our teammates completed all of his tasks and ended up not having much
+        left to do for some time. Additionally, tasks overlapped sometimes,
+        which resulted in redundant work being made. If we had spent a bit more
+        time utilizing github issues or projects, we may have been able to avoid
+        code duplication and be a bit more up to date with what everyone was
+        doing.
+      </p>
+
+      <p>
+        <strong> [Jasmine Vodhanel]</strong> Since I was on the team as an
+        artist, I didn’t have to collaborate on the programming aspects very
+        much and my work was very separated from everyone else’s making it easy
+        to know what was expected of me and what my tasks were. I really enjoyed
+        not having to juggle coding and art and just being able to dedicate the
+        time to art but it also means I had to collaborate closely with graphics
+        and physics to make sure we agreed on how the models were set up and
+        exported and also figuring out where importing errors were coming from
+        (whether on blender side or our engine side) etc. which I think we did
+        well. I appreciate that my team worked hard to make sure my models
+        imported correctly so I could focus on creating them.
+      </p>
+
+      <p>
+        <strong>[Brandon Reponte] </strong> Initially, we had Jasmine do ALL the
+        modeling, including the bounding boxes. But that delegation for the
+        physics in modeling stunted her development. Towards the end of the
+        quarter, we had to readjust due to a lack of time and I began to be in
+        charge of adding and adjusting the bounding boxes for the models that
+        Jasmine would create.
+      </p>
 
       <h3>
         Which aspects of the implementation were more difficult than you
         expected, and which were easier? Why?
       </h3>
-      <p></p>
+      <p>
+        <strong>[Gabriel Ikezaki] </strong> Positioning things on screen was
+        unexpectedly very frustrating. Because I coded UI textures to treat the
+        game window like a quad, I couldn’t position things by pixel
+        coordinates, instead I had to place them in respect to the quad’s
+        corners: (-1,1) was the top left corner, (1,-1) was the bottom right
+        corner. This combined with scaling, different screen sizes and the long
+        compiling time made this a tedious process even for small changes. I
+        will say that using a texture atlas was easier than I thought. The idea
+        of drawing parts of a texture and then changing the quad coordinates to
+        draw a different part sounded overwhelming to me, but it was much easier
+        than it seemed, especially when I got the hang of it.
+      </p>
+
+      <p>
+        <strong> [Ravi Shende]</strong> Once we had the workflow set up for
+        putting objects into rooms and the scene in general, it was surprisingly
+        easy to populate rooms with furniture. Not a lot of furniture was put
+        into the rooms in the final game due to time constraints and that being
+        lower priority, but overall it was easier than expected. I think our
+        team did a great job with creating useful APIs so that other members of
+        the team could integrate with their portions without stressing about
+        underlying details.
+      </p>
+
+      <p>
+        <strong>[William Zhang] </strong> Not so much implementation, but
+        testing for interactions that required all four players to be present
+        started taking way too long. Our load in time for our clients was quite
+        slow, and sometimes took up to a few minutes for all clients to be ready
+        and playable (running all clients on one PC). This meant each iteration
+        of an implementation might take more time than necessary to test and
+        debug. Other than this, implementation was made very smooth thanks to
+        the design of our team members, making everything easy to use.
+      </p>
+
+      <p>
+        <strong> [Brandon Reponte]</strong> The initial physics implementation
+        was not as difficult as I thought, despite building it from scratch.
+        Initial integration with the graphics and network was also not as
+        difficult as I had believed it would be. The main difficulty was
+        implementing the physics with the architecture of the minigames and
+        mechanics. Ensuring that everything was being referenced cleanly with
+        the architecture that we had initially had planned was difficult, and
+        discerning when a change in architecture was necessary was difficult.
+      </p>
+
+      <p>
+        <strong>[Jasmine Vodhanel] </strong> Adding bounding boxes was more time
+        consuming than expected so I’m glad Brandon took over that later. Making
+        and baking textures took a lot more effort and time than I liked because
+        it was kinda a tedious process to prepare the textures for baking and
+        exporting since I was using procedural textures. Modeling was probably
+        my favorite part but took the most time in general. Making animations
+        was fun but figuring out how to export them properly was painful and we
+        kept running into random issues with exporting/importing.
+      </p>
+
+      <p>
+        <strong>[Helen Lin] </strong> The beginning was a bit more difficult
+        than I expected. I knew that it would probably be hard but it was
+        difficult figuring out what to do when I had absolutely no idea of where
+        to start. I knew what was needed but just had no idea of how to
+        implement most of the time. Like for the custom physics collision
+        response, I knew it had to come from the physics side but how do we
+        figure out the objects in collision to call the correct collision
+        response. Implementing the minigame once the first one was completed was
+        much easier than I thought. There were a lot more similarities than I
+        thought even though the game play of the minigames were different.
+      </p>
+
+      <p>
+        <strong>[Julie Hong] </strong>Adding point light shadows was one of the
+        more challenging parts. The implementation itself wasn’t too hard, but
+        there were many things to consider to make sure it didn’t hurt
+        performance, so I spent some time optimizing it. Aside from that, there
+        was just a lot of work in general, but it was all doable.
+      </p>
+      <p><strong> </strong></p>
 
       <h3>Which aspects of the project are you particularly proud of? Why?</h3>
-      <p></p>
+      <p>
+        <strong>[Gabriel Ikezaki] </strong> I’m very proud of the lobby screen,
+        even if it didn’t make it to the demo. I’m proud of its visual design
+        and I think I did a good job creating the queueing system on the last
+        day before the demo, given that I had very little experience with the
+        networking side of the project until then.
+      </p>
+
+      <p>
+        <strong>[Ravi Shende] </strong> I’m quite proud of the circus game. It
+        changed a lot from our original design, and I think Jasmine did a great
+        job incorporating the new parkour elements into the game. I spent a lot
+        of time trying to get the cannons to work with it, and I think in the
+        end it worked out great. It was fun, challenging, and made for a good
+        show.
+      </p>
+
+      <p>
+        <strong>[Helen Lin] </strong> I'm quite proud of all the models that our
+        artist Jasmine created. I think it was rather nice that we were able to
+        have pretty much all the models and textures we needed for the game be
+        completely made by our artist. Another thing that I am particularly
+        proud of is though by demo time we couldn't get all 3 minigames merged
+        in, I was proud that we pretty much had 3 different game logic
+        implemented through the minigames. It brought some variety of game play
+        into the the game
+      </p>
+
+      <p>
+        <strong>[William Zhang] </strong>I’m much more fond of using blocks to
+        build things rather than making the blocks itself, so I’d say I’m very
+        proud of our first game class designs, rooms, objects, interactables,
+        that we designed from scratch to support our overall game. For me
+        specifically, I’m most proud of the key and key room, because that's the
+        first thing I made that properly made it into the finished game.
+      </p>
+
+      <p>
+        <strong>[Brandon Reponte] </strong>I am extremely proud of the
+        fundamental physics engine that I had built from scratch. Being able to
+        see objects interacting with each other, jumping on top of each other,
+        and pushing each other was rewarding. I am especially proud of the
+        ability for the AABB’s to resize based on orientation. And doing all of
+        this in a way that makes it relatively easy to build on top of was
+        impressive in my eyes.
+      </p>
+
+      <p>
+        <strong>[Jasmine Vodhanel] </strong> I’m very proud of my character
+        models because it was something outside of my comfort zone with modeling
+        but they turned out soooo good and everyone tells me they’re so cute
+        which makes me so happy because I’ve never made a character model before
+        and I was scared I would struggle and they would look bad. I’m also
+        particularly proud of the circus room because of how good it looks in
+        the short time I made it and proud of the piano because I think the
+        model came out nicely. I’m also overall proud of how much I learned
+        about blender through this project.
+      </p>
+
+      <p>
+        <strong>[Julie Hong] </strong> I’m genuinely proud of how much work I
+        put into this project from the very beginning. I set up all the
+        dependencies, wrote all the CMake files to support cross-platform
+        builds, and built the networking system from scratch around week 2 or
+        3–which ran smoothly throughout the quarter without major issues. I also
+        implemented the graphics pipeline, including model loading, textures,
+        animations, point lights, shadows, and additional features like
+        fireflies. I also added keyboard controls and set up a first-person
+        camera, including direction changes through mouse input. I made sure to
+        keep the code clean and well-documented. Looking back, I’ve grown a lot
+        through this project, and I’m truly grateful for opportunities to learn
+        and challenge myself in so many ways.
+      </p>
 
       <h3>
         What was the most difficult software problem you faced, and how did you
         overcome it (if you did)?
       </h3>
-      <p></p>
+      <p>
+        <strong> [Gabriel Ikezaki] </strong> Figuring out how to draw textures
+        for the first time was challenging to me. I came to this project wanting
+        to learn more about graphics, but this has never been a specialty for
+        me. It took me a while to wrap my head around using arrays to store
+        vertex configurations, filling buffers to set up the vertices and
+        creating shaders to define the rendering pipeline for textures to only
+        then draw images. I was stuck on this for a day until I took my time to
+        study the documentation and use ChatGPT to help me debug my code.
+      </p>
+
+      <p>
+        <strong>[Ravi Shende] </strong> I didn’t have one single issue that
+        stood out as most difficult, but we did have a software problem that was
+        the most stressful: our server would crash every time the third client
+        loaded in. We found this during the dry run on demo day, 1.5 hours
+        before the demo. We solved this by first isolating the commit where the
+        crashes started. From there, we looked through the code, isolated
+        different pieces that could potentially cause issues, and then tried the
+        code with just those parts changed from the previous commit. Eventually
+        we found the issue was with a character array, so we changed it to an if
+        else statement and realized that the issue was actually in the loading
+        in of the 3rd character model. So, we fixed this by loading in one model
+        for 2 different players, and not loading in the problematic model. If we
+        had more time, we could have re-exported the character model after
+        fixing any issues, but there was no time to do that.
+      </p>
+
+      <p>
+        <strong> [William Zhang]</strong> Classic issues of segmentation faults
+        and uninitialized variables. Trying to debug a client crash or server
+        crash is always super frustrating, especially when trying to replicate
+        the crash or issue and it not occuring on other devices. Most of the
+        issues with segmentation faults were results of spelling errors in json
+        messages, or naming errors for files. Also finally learnt about the
+        consequences of uninitialized variables when the integer would be
+        assigned to 0 on one device, and a garbage value on the other.
+      </p>
+
+      <p>
+        <strong>[Brandon Reponte] </strong> Figuring out how to handle door
+        interactions was a huge challenge. I was not expecting to work on the
+        door mechanics since I was mainly in charge of physics, and debugging
+        something that I didn’t implement was difficult. I overcame this problem
+        by honestly just looking at the code and testing where it would break. I
+        figured out that it was a referencing problem because our implementation
+        for interactables would be constantly checking the position of nearby
+        interactables, which would conflict with the need to delete the collider
+        for the door when opened. This was another area that required a slight
+        adjustment to the architecture of classes and the fields within them.
+      </p>
+
+      <p>
+        <strong>[Helen Lin] </strong> Though not major, one thing that stood out
+        the most was the bugs that we had that were not replicable across
+        computers. We had various times where on our own laptops the game would
+        run smoothly but then when we ran it on the lab computers it would be
+        very laggy all because too many packets were sent. It made it hard to
+        debug since we did not have the time to test on the lab computers. But
+        we overcame it by checking out individual commits and PR merges to
+        locate the problem and make it known. I also later spent more time in
+        the lab making sure that the game runs as expected on my laptop and the
+        lab computers.
+      </p>
+
+      <p>
+        <strong>[Julie Hong] </strong>One of the big challenges came from
+        exporting animations in FBX format from Blender. Jasmine and I spent a
+        lot of time trying to figure out the correct export settings and how to
+        include multiple animations in a single file. In the end, we weren’t
+        able to get that working, so we exported each animation as a separate
+        file.
+      </p>
 
       <h3>
         In developing the media content for your project, you relied upon a
@@ -96,8 +559,35 @@
         of them? Would you use them again, or look elsewhere? Are there any
         tools that you used but, looking back, you would avoid?
       </h3>
-      <p></p>
+      <p>
+        For modeling, we used Blender. We would also use these Blender models to
+        create bounding boxes for the physics. We had a script that would
+        iterate all the Blender files and extract the bounding box dimensions
+        for the physics to easily access. We also had a separate file to
+        determine the positioning of all the models within our world.
+      </p>
 
+      <p>
+        <strong>[Jasmine Vodhanel] </strong> For general models, if I was making
+        one prop or one room I would join all the pieces of that object together
+        in Blender and make sure if I was making a room that the origin was in
+        the correct position every time to make sure it aligned with the center
+        and the top of the floor plane. I also constantly checked if my normals
+        were flipped in Blender before sending my models over. I sent my models
+        as obj and mtl files to Julie along with all png textures that went with
+        those models. Occasionally I would double check in mtl files (in
+        notepad) that the textures were appropriately being assigned to the
+        correct materials. From there Julie handled importing into the engine.
+        For animation, that was a struggle, we had to export as thx instead of
+        obj and we couldn’t get multiple animations working so we ended up
+        exporting a different fbx for every animation. I am not very experienced
+        with making animation in Blender so it’s possible I was doing it wrong.
+      </p>
+
+      <p>
+        <strong>[Julie Hong] </strong> I used Assimp to load models, textures,
+        and animations, and I found it really easy to work with.
+      </p>
       <h3>
         For those who used a networking library (e.g., RakNet or Boost), a
         physics library (e.g., Rapier or Bullet), an audio library (e.g., SFML
@@ -109,36 +599,306 @@
         those modules, judging from the experiences of the groups that did,
         would you have used it in retrospect?
       </h3>
-      <p></p>
+      <p>
+        For physics, we decided to implement our own physics engine because we
+        believed that our physics was simple enough to not deal with the
+        overhead of understanding a new library. It was also helpful since we
+        knew exactly how our physics was implemented, and could easily add any
+        necessary functionality as needed. Upon retrospect, I believe
+        implementing our own physics engine was the best choice for us because
+        it allowed us to implement any custom logic we needed, for the simple
+        physics we needed.
+      </p>
+
+      <p>
+        <strong>[Julie Hong] </strong> I chose to use Boost because it’s
+        cross-platform, and I loved working with it. One thing I noticed early
+        on was how boost::asio::streambuf behaves–even if it’s set to read until
+        a newline (‘\n’), but for efficiency, it often reads more data than
+        expected. Aside from that, everything else was very straightforward and
+        easy to use.
+      </p>
 
       <h3>
         How many lines of code did you write for your project? (Do not include
         code you did not write, such as library source.) Use any convenient
         mechanism for counting (e.g., scc), but state how you counted.
       </h3>
-      <p></p>
+      <p>
+        We wrote approximately <strong>10,705</strong> lines of code. We used
+        git commands to count the lines of code in each file in the ‘include’
+        and ‘src’ directories (both of which contain only the code we wrote):
+      </p>
+      <p>
+        <code>git ls-files '*.cpp' '*.hpp' | xargs wc -l</code>
+      </p>
 
       <h3>
         What lessons about group dynamics did you learn about working in such a
         large group over an extended period of time on a challenging project?
       </h3>
-      <p></p>
+      <p>
+        <strong>[Gabriel Ikezaki] </strong>Frequent and clear communication is
+        key. A group that doesn’t make the effort to clear assumptions is bound
+        to fail.
+      </p>
+
+      <p>
+        <strong> [Brandon Reponte]</strong> Communication is everything,
+        especially in terms of architecture and getting everyone on the same
+        page. Communication keeps everyone accountable to a schedule and
+        encourages everyone to do meaningful work. Without it, people would be
+        at risk of implementing something that is either unnecessary or
+        incorrect, which is detrimental given a strict timeframe and the
+        dependencies within the codebase. I still need to figure out how to
+        discern when my assumptions are correct and when I need clarification
+        from a teammate.
+      </p>
+
+      <p>
+        <strong>[William Zhang] </strong> I’m definitely a culprit of trying to
+        implement useless things. Spent my sweet time implementing client side
+        classes that did not need to be implemented. Result of me not properly
+        understanding other aspects of our game like graphics and physics.
+        Communication is indeed crucial, even just sitting in on other people’s
+        conversation will provide valuable insight, and help you catch any
+        incorrect assumptions you are making.
+      </p>
+
+      <p>
+        <strong>[Jasmine Vodhanel] </strong> I’m someone who likes knowing
+        everything that’s going on in a group but I accepted that was impossible
+        considering I didn’t understand the code base so I just kinda stuck to
+        my area and communicated with the people directly connected to my area.
+        I also tried to maintain communication with everyone before I changed
+        anything dramatically or if I had an idea about something and kept
+        posting updates over time with grayboxed examples to make sure we were
+        on the same page before fully modeling items. I also tend to and like
+        summarizing agreements or discussions after our group has them just to
+        make sure we all end on the same page. Being present at group meetings I
+        think helped keep us on the same page also.
+      </p>
+
+      <p>
+        <strong>[Helen Lin] </strong> Communication was important, and also just
+        directly reaching out to work with the person that you need to
+        collaborate with. Much easier to just do a work session and discuss it.
+        The team meetings twice a week helped a lot as through discussion and
+        updates we were able to steer each other back on track if anyone
+        diverted but also update each other on changes that would impact another
+        person’s work. Especially at the beginning where everyone is pretty much
+        working on and depending on the same things or each other’s work..
+      </p>
 
       <h3>
         Looking back over the past 10 weeks, is there anything you would do
         differently, and what would you do again in the same situation?
       </h3>
-      <p></p>
+      <p>
+        <strong>[Gabriel Ikezaki] </strong> I wouldn’t have spent so much time
+        creating the first version of the graphics engine. Even though it was a
+        good motivation to do research and dig into resources about graphics and
+        game engines, I think I could’ve spent that time making other
+        contributions.
+      </p>
 
+      <p>
+        <strong>[Brandon Reponte] </strong> In retrospect, I would have figured
+        out and focused a lot more on the fundamentals and the must haves. There
+        were times when we talked about features and mechanics that were purely
+        aesthetic while we still had yet to implement the actual core of the
+        game.
+      </p>
+
+      <p>
+        <strong>[William Zhang] </strong> I would not be late to meetings as
+        much. Being late meant I spent a good chunk of time catching up with
+        others, and sometimes I would miss crucial context and conversations. I
+        would also probably learn to use github better. I mainly only have
+        experience working with small teams, even at my internship and lab,
+        which means I don’t usually read github comments or use github tools
+        like lint, relying mostly on direct communication with team members. The
+        features of github really make life a lot easier if used correctly.
+      </p>
+
+      <p>
+        <strong>[Jasmine Vodhanel] </strong> I would start the models and
+        animations sooner I think because I really wanted to get multiple
+        animations working but ran out of time to dedicate to that. Otherwise I
+        felt generally pretty good about my process. I always wished I could get
+        more done every week but I think I would always feel like that
+        regardless of how much work I did. Oh also I would figure out version
+        control for my Blender files a lot earlier because I think swapping how
+        I was managing them led to a few conflicts later.
+      </p>
+
+      <p>
+        <strong>[Helen Lin] </strong> In retrospect, most of my PR’s were
+        relatively small but some of them I combined and I would probably have
+        separated them. The final PRI was working on incorporating piano room
+        ambiance, hotel room ambiance, along with the logic of implementing the
+        piano room, and the sfx for the piano keys to play sound. This PR did
+        not get merged in. In hindsight I would have merged in all sfx in one PR
+        first so we had that to show off during the demo.
+      </p>
+
+      <p>
+        <strong>[Julie Hong] </strong>
+        One important lesson I learned is that sometimes I need to speak up and
+        encourage important decisions to be made more quickly. I knew how much
+        work would be needed once the map was finalized, but I followed the
+        majority opinion to wait for the dynamic map generation code to be
+        completed. Unfortunately, it didn’t end up working and we had to decide
+        on the map at the last minute. Next time, if I’m confident about
+        something and see the need for a timely decision, I’ll make sure to
+        voice my thoughts more clearly. I also realized the importance of
+        setting aside time to review others’ code before the deadline. A few
+        bugs were introduced at the last minute, and I know I could have caught
+        them if I had had time to review the changes. Moving forward, I’ll try
+        to finish my own work earlier so I can spend more time reviewing
+        commits–especially from teammates who might be less familiar with the
+        codebase–to help ensure a more stable and reliable result and to be a
+        more responsible team member.
+      </p>
       <h3>Which courses at UCSD do you think best prepared you for CSE 125?</h3>
-      <p></p>
+      <p>
+        <strong>[Gabriel Ikezaki] </strong> Advanced Data Structures (CSE100),
+        Computer Graphics (CSE167) and Software Engineering (CSE110) were very
+        useful for me, since I was creating a bunch of classes that manipulate
+        graphics and needed to cooperate with teammates to figure out
+        merging/version control. Advanced Design Studio (COGS125) was also
+        unexpectedly relevant for the tasks I ended up doing (HUD/UI stuff).
+      </p>
+
+      <p>
+        <strong>[William Zhang] </strong> Advanced Data Structures (CSE100),
+        Operating Systems (CSE120), and Software Engineering (CSE110). CSE 100
+        gave me the foundation in C++, class implementation and pointers, which
+        were very necessary in this project. I ended up building a lot on what
+        other people had already built, so software implementation practices we
+        learnt in CSE 110 were very useful. During CSE120 I also developed
+        skills in looking and reading through code quickly, which came in handy
+        when shifting through our 10,000 lines of code.
+      </p>
+
+      <p>
+        <strong>[Ravi Shende] </strong>For me the biggest help came from
+        Software Engineering (CSE110) for the teamwork aspect and working in
+        large codespaces. I would also say that Operating Systems (CSE120)
+        helped a lot with understanding large codebases that I did not write.
+        Finally Advanced Data Structures (CSE100) was useful because it taught
+        me how to program in C++ and think about which different data structures
+        would be the best fit for different scenarios.
+      </p>
+
+      <p>
+        <strong>[Brandon Reponte] </strong> I believe the course that prepared
+        me the most was CSE 110: Software Engineering. It helped me understand
+        the expectations of working in a large group, especially since I worked
+        in a group of 10 in that course. In that course, I was encouraged to
+        learn the social aspect of software development, and the need for
+        communication. Additionally, I would say CSE 100: Advanced Data
+        Structures was also helpful since it familiarized me with general
+        programming, especially in C++. I also used my knowledge in data
+        structures when storing references to certain objects.
+      </p>
+
+      <p>
+        <strong>[Jasmine Vodhanel] </strong> I think CSE 167 and 169 helped me
+        understand the Blender to engine pipeline in a way that influenced how I
+        made my models and made sure I understood what I was doing on a deeper
+        level. I’m not sure if its necessary per se, but I think it was useful
+        to know.
+      </p>
+
+      <p>
+        <strong>[Julie Hong] </strong> Courses like CSE 123, CSE 120, and CSE
+        167 helped me a lot throughout this project.
+      </p>
 
       <h3>What advice would you give to future CSE 125 students?</h3>
-      <p></p>
+      <p>
+        <strong>[Gabriel Ikezaki] </strong> Beware of ambition. Starting off
+        with a small game scope and then expanding upon it is much easier than
+        having too many ideas and having to cut corners as deadlines approach.
+      </p>
+
+      <p>
+        <strong>[Ravi Shende] </strong> Don’t rely on LLMs for code generation.
+        They are very useful for help with debugging, but by writing your own
+        code, you have a much fuller understanding of how all the pieces in your
+        codebase work together, which allows you to implement features and solve
+        issues much quicker in the long run. Another piece of advice I have is
+        to talk through your issues and architecture ideas with your teammates
+        (who work in similar fields). This helps produce better code and solve
+        issues faster. Plus, everyone has a better understanding of each other’s
+        code that way.
+      </p>
+
+      <p>
+        <strong>[Brandon Reponte] </strong> Learn how to communicate with your
+        team, and communicate as much as possible, even in the very small wins.
+        Sometimes, those small ideas might propagate. Additionally, be cautious
+        that architecture and documentation DO NOT mix well with deadlines.
+      </p>
+
+      <p>
+        <strong>[William Zhang] </strong> Be prepared to change your initial
+        ideas. Not everything goes according to plan so learn to adapt and keep
+        pushing through :)
+      </p>
+
+      <p>
+        <strong>[Jasmine Vodhanel] </strong> I realized in the middle of the
+        quarter that I was taking it too seriously and I should be more silly
+        goofy with my models and my work considering we have creative freedom
+        and then I started having more fun lol. My advice would be to have fun,
+        still make sure you’re getting your work done but like while you are
+        working hard, remember that you have freedom and this should be a
+        passion project. Have fun with your team and be nice to each other :)
+      </p>
+
+      <p>
+        <strong>[Helen Lin]</strong> Don't fret on figuring things out right
+        away the beginning things will become more clear as you discuss it and
+        get implement just keep communicating with your team and the professor.
+        You are all in it together.
+      </p>
+
+      <p>
+        <strong>[Julie Hong]</strong>
+        One thing I learned is not to plan on adding new features right before
+        the demo. Even if it feels like something you could implement quickly,
+        it’s much better to use that time for thorough testing. In the end,
+        stability matters more than squeezing in one last feature.
+      </p>
 
       <!-- Question 14  -->
       <!-- Please post four final screenshots of your game on your group pages for posterity. I will display them on the group web page.
  -->
+      <h2>Final Screen Shots</h2>
+      <div style="width: 80%; margin: 0 auto">
+        <img
+          src="assets/Final1.png"
+          alt="Final Screenshot 1"
+          style="width: 100%"
+        />
+        <img
+          src="assets/Final3.png"
+          alt="Final Screenshot 3"
+          style="width: 100%"
+        />
+        <img
+          src="assets/Final4.png"
+          alt="Final Screenshot 4"
+          style="width: 100%"
+        />
+        <img
+          src="assets/Final2.png"
+          alt="Final Screenshot 2"
+          style="width: 100%"
+        />
+      </div>
     </main>
   </body>
 </html>

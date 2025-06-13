@@ -74,11 +74,11 @@ h1 {
 }
 
 #tony-link {
-  background-color: rgb(189, 189, 27);
+  background-color: rgb(189, 180, 109);
 }
 
 #tony-link:hover {
-  background-color: rgba(189, 189, 27, 0.7);
+  background-color: rgba(189, 180, 109, 0.7);
 }
 
 #game-info {
