@@ -195,6 +195,16 @@
         quarter.
       </p>
 
+      <p>
+        <strong> [Annie Wong] </strong>I thought I would spend more time on coding
+        the audio in but I don’t really have much time on it and instead I use what 
+        remaining time I have to provide the audio assets which is faster and easier
+        for me to do. The reason why I didn’t code as much as I thought is because 
+        I was doing three other projects at the same time which made time management 
+        harder than usual for me. I feel if I don’t have many projects I need to 
+        juggle, I could have committed more time into audio programming. 
+      </p>
+
       <h2>General Questions</h2>
       <h3>
         Describe your development environment. What tools did you use? What was
@@ -233,6 +243,13 @@
                   also set up pretty quickly, and although there were some bugs
                   it didn’t take long for cross platform support to be well
                   established.
+                </li>
+                <li>
+                  <strong>[Annie Wong] </strong> I recommend using FMOD Studio not 
+                  FMOD Core to easily edit your audio without needing to code it. 
+                  For example you can set it to loop in the FMOD app and once you 
+                  call it to play from the game engine it will loop itself. No need to manually 
+                  code it to loop.
                 </li>
               </ul>
             </li>
@@ -389,6 +406,22 @@
         performance, so I spent some time optimizing it. Aside from that, there
         was just a lot of work in general, but it was all doable.
       </p>
+
+      <p>
+        <strong>[Annie Wong] </strong> When implementing the FMOD API, I didn’t 
+        expect linking a library would be that hard. I never linked or used any 
+        external library in my code before so I thought it would be a simple drag 
+        and drop into the folder and call it with a reference. I came to realize 
+        it’s not the case if the software or app is a cross-platform between 
+        different OS systems. I don’t have much experience in CMake so I was 
+        struggling. Eventually Julie helped link the library after my long attempt.
+        I would say after implementing in the FMOD API and initializing the audio 
+        engine, the rest of the steps become easier which are putting in the assets 
+        into the game. One inconvenient thing is that since I’m the only one with 
+        the FMOD app, whenever I add in or update assets nobody else but me can 
+        build it. 
+
+      </p>
       <p><strong> </strong></p>
 
       <h3>Which aspects of the project are you particularly proud of? Why?</h3>
@@ -464,6 +497,17 @@
         keep the code clean and well-documented. Looking back, I’ve grown a lot
         through this project, and I’m truly grateful for opportunities to learn
         and challenge myself in so many ways.
+      </p>
+
+      <p>
+        <strong>[Annie Wong]</strong> I’m really proud of doing both the technical 
+        and creative side of audio because the audio does make the gameplay 
+        experience much better. I’m most proud of the Swamp Ambience track I made 
+        because I made the track with the intention of it being played out from 
+        the 5:1 surround speaker at the Atkinson Hall auditorium. And it sounds 
+        pretty good during the showcase! I also enjoy contributing to the game 
+        design since the game is based on music and audio. 
+
       </p>
 
       <h3>
@@ -544,6 +588,16 @@
         file.
       </p>
 
+      <p>
+        <strong>[Annie Wong] </strong> One problem I faced after the audio library 
+        was implemented is getting the sound to play. I thought I followed all 
+        the steps correctly, which is loading the bank and event and calling it 
+        to play. It took me a while to figure out until I read the FMOD Documentation
+        carefully and it told me I need to include a line to load in the master bank 
+        that serves as the audio output. 
+        That missing line actually did get the audio to play…
+      </p>
+
       <h3>
         In developing the media content for your project, you relied upon a
         number of tools ranging from the underlying graphics libraries to
@@ -619,6 +673,18 @@
         easy to use.
       </p>
 
+      <p>
+        <strong>[Annie Wong] </strong> I used FMOD Studio API and I would totally
+        use them again. A few annoying things about using them is that you would 
+        need to have experience with Cmake if the app is cross platform and if you 
+        were to add in or update the audio assets, only the people with the Fmod 
+        Studio software installed can build it.. One thing you need to keep in mind 
+        is there are not many online tutorials of installing and using FMOD in any 
+        other game engine besides Unity and Unreal Engine so you would have to 
+        carefully read the FMOD API documentation and the documentation itself have 
+        many tabs and pages. 
+      </p>
+
       <h3>
         How many lines of code did you write for your project? (Do not include
         code you did not write, such as library source.) Use any convenient
@@ -688,6 +754,14 @@
         diverted but also update each other on changes that would impact another
         person’s work. Especially at the beginning where everyone is pretty much
         working on and depending on the same things or each other’s work..
+      </p>
+
+      <p>
+        <strong>[Annie Wong]</strong> One lesson I learned is I should have been 
+        clearer with my intention because I had a single miscommunication with a 
+        team member and I felt bad about it. I also learned that working in person 
+        is better since there is barely the risk of miscommunication compared to 
+        working online.
       </p>
 
       <h3>
@@ -760,6 +834,13 @@
         codebase–to help ensure a more stable and reliable result and to be a
         more responsible team member.
       </p>
+
+      <p>
+        <strong>[Annie Wong] </strong> One thing I would do differently is trying 
+        to get my time management better and try to make it to morning meetings. 
+        Morning meetings were hard for me to attend because I often stay up late 
+        working on projects and schoolwork. 
+      </p>
       <h3>Which courses at UCSD do you think best prepared you for CSE 125?</h3>
       <p>
         <strong>[Gabriel Ikezaki] </strong> Advanced Data Structures (CSE100),
@@ -814,6 +895,12 @@
       <p>
         <strong>[Julie Hong] </strong> Courses like CSE 123, CSE 120, and CSE
         167 helped me a lot throughout this project.
+      </p>
+
+      <p>
+        <strong>[Annie Wong] </strong> CSE 15L helped me with understanding command
+        prompt commands. CSE 167 did help me with understanding the perspective from 
+        a graphic programmer. And CSE 100 did me understand C++ syntax better. 
       </p>
 
       <h3>What advice would you give to future CSE 125 students?</h3>
@@ -871,6 +958,14 @@
         the demo. Even if it feels like something you could implement quickly,
         it’s much better to use that time for thorough testing. In the end,
         stability matters more than squeezing in one last feature.
+      </p>
+
+      <p>
+        <strong>[Annie Wong]</strong> Have fun and always communicate with your team
+         members. Always good to confirm with your teammates if everybody is on the 
+         same page with the idea no matter how small or big it is. Also try to attend
+         the Video Game Development Club (VGDC) workshop events to get more ideas and inspirtions for game ideas or
+        game programming! 
       </p>
 
       <!-- Question 14  -->
